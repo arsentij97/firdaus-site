@@ -15,7 +15,10 @@
   var T = lang === 'en'
     ? { cur: ' ₸', year: function (s) { return '≈ ' + s + ' ₸ a year'; }, locale: 'en-US', subj: 'Firdaus partner application', fields: { name: 'Name', contact: 'Telegram or email', link: 'Page', where: 'Main platform', size: 'Followers', city: 'Country and city', about: 'About' } }
     : { cur: ' ₸', year: function (s) { return '≈ ' + s + ' ₸ за год'; }, locale: 'ru-RU', subj: 'Заявка в партнёрскую программу Firdaus', fields: { name: 'Имя', contact: 'Telegram или почта', link: 'Страница', where: 'Главная площадка', size: 'Подписчиков', city: 'Страна и город', about: 'О чём пишет' } };
-  var fmt = function (n) { return Math.round(n).toLocaleString(T.locale).replace(/,/g, ' '); };
+  var fmt = function (n) {
+    var s = Math.round(n).toLocaleString(T.locale);
+    return lang === 'en' ? s : s.replace(/[\s  ,]/g, ' ');
+  };
   var $ = function (id) { return document.getElementById(id); };
 
   /* подписчики: ползунок 0–100 по логарифму, 1 000 … 1 000 000 */
