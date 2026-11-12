@@ -42,7 +42,6 @@ button,input,select,textarea{font:inherit;color:inherit}
 h1{font:700 clamp(36px,5.6vw,66px)/1.05 var(--sans);letter-spacing:-.04em;text-wrap:balance}
 h2{font:700 clamp(30px,4.2vw,48px)/1.08 var(--sans);letter-spacing:-.03em;text-wrap:balance}
 h3{font:600 19px/1.3 var(--sans);letter-spacing:-.015em}
-p{text-wrap:pretty}
 em.warm{font-family:var(--serif);font-style:italic;font-weight:300;font-size:1.07em;letter-spacing:-.01em;color:var(--moon);padding-right:.04em}
 .eyebrow{font:600 12px/1.2 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
 .lead{font-size:clamp(17px,1.6vw,20px);line-height:1.55;color:var(--muted);max-width:34em}
@@ -50,6 +49,8 @@ em.warm{font-family:var(--serif);font-style:italic;font-weight:300;font-size:1.0
 .num{font-variant-numeric:tabular-nums}
 .sec{padding:88px 0}
 @media(min-width:960px){.sec{padding:128px 0}}
+/* Ниже первого экрана браузер не считает раскладку, пока блок не близко (скорость на телефоне). */
+.sec{content-visibility:auto;contain-intrinsic-size:auto 900px}
 .sec-head{max-width:940px;margin-bottom:44px}
 .sec-head p{margin-top:16px;color:var(--muted);font-size:18px;max-width:36em}
 
@@ -89,7 +90,7 @@ em.warm{font-family:var(--serif);font-style:italic;font-weight:300;font-size:1.0
 .hero{position:relative;padding:40px 0 72px;overflow:hidden}
 @media(min-width:960px){.hero{padding:64px 0 112px}}
 .hero::before{content:"";position:absolute;inset:-20% -10% auto auto;width:900px;height:900px;pointer-events:none;
-  background:radial-gradient(closest-side,rgba(217,185,92,.16),rgba(217,185,92,.05) 55%,transparent);filter:blur(10px)}
+  background:radial-gradient(closest-side,rgba(217,185,92,.16),rgba(217,185,92,.05) 55%,transparent)}
 .hero-grid{position:relative;display:grid;gap:56px;align-items:center}
 @media(min-width:960px){.hero-grid{grid-template-columns:1.12fr .88fr;gap:40px}}
 .hero h1{margin:18px 0 22px}
