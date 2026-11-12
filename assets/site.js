@@ -30,7 +30,7 @@ window.FIRDAUS = {
      Режим без cookie и без хранения на устройстве: баннер согласия не нужен.
      Грузится после загрузки страницы и не мешает скорости. Разбор и
      альтернативы — docs/dela/seo-servisy.md. */
-  posthogKey: '',
+  posthogKey: 'phc_uZvV3CabWBg6WAE5MZpBKMHBtXHfxyuDgQGw5Wk89tFq',
 };
 
 (function () {
