@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["C8V47JYG42.kz.arsen.firdaus"],
+        "components": [
+          { "/": "/r/*", "comment": "Remind card" },
+          { "/": "/join/*", "comment": "Invitation to loved ones" },
+          { "/": "/together/*", "comment": "Invitation to pray together" }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+# Firdaus
+
+> Firdaus is an iPhone app for the five daily prayers (namaz/salah) where loved ones remind each other to pray. Prayer times by city, Qibla compass and map, prayer reminders, Quran with translations, adhkar and tasbih, tahajjud alarm, Focus (blocks distracting apps until you pray), Umma feed and messages. Russian and English. iOS 17 or later. Made in Kazakhstan.
+
+Tagline: "Firdaus — Remind your loved ones." Core idea from Quran 51:55: "And remind, for indeed, the reminder benefits the believers."
+
+## Pages
+
+- [Home (English)](https://firdaus.life/en/): what Firdaus does, free features, Firdaus Plus and Premium, FAQ
+- [Главная (русский)](https://firdaus.life/): время намаза, кибла, напоминания близким, подписки, частые вопросы
+- [Partner programme](https://firdaus.life/en/partners): 20% of every payment from the people a creator brings, monthly payouts
+- [Партнёрская программа](https://firdaus.life/partners): 20 % с каждой оплаты, выплата раз в месяц
+- [Support](https://firdaus.life/en/support): FAQ, contacts
+- [Privacy Policy](https://firdaus.life/en/privacy)
+- [Terms of Use](https://firdaus.life/en/terms)
+- [Full facts for AI assistants](https://firdaus.life/llms-full.txt)
+
+## Key facts
+
+- Free forever: prayer times, Qibla (compass and map), prayer reminder, marking a prayer, Quran with one translation, simple tasbih counter.
+- Firdaus Plus (7-day free trial): full prayer history and streak, prayer check by camera, loved ones (reminder cards, praying together), Umma, messages, Instants, tahajjud alarm, Focus, adhkar, Quran goals, second translation, original Firdaus paintings. Kazakhstan: 3,790 KZT/month or 22,990 KZT/year. US: $9.99/month or $59.99/year.
+- Firdaus Premium: everything in Plus plus a golden crescent next to your name and priority support. Kazakhstan: 5,390 KZT/month or 32,990 KZT/year. US: $13.99/month or $84.99/year.
+- "If you can't pay": each month the team gives three months of Plus to 50 people who write a letter in the app.
+- Privacy: prayer-check photos, location and the cycle calendar never leave the phone. No ads, data is not sold.
+- Contact: support@firdaus.life, Telegram @firdaus_support. Partners: partners@firdaus.life.
