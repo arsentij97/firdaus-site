@@ -99,6 +99,7 @@ window.FIRDAUS = {
       }
       a.removeAttribute('href');
       a.setAttribute('aria-disabled', 'true');
+      a.setAttribute('role', 'link');
       a.classList.add('soon');
       var label = a.querySelector('[data-label]') || a;
       label.textContent = a.getAttribute('data-soon') || label.textContent;
