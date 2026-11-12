@@ -426,3 +426,6 @@ input[type=range]:focus-visible::-webkit-slider-thumb{box-shadow:0 0 0 3px var(-
 }
 @media(min-width:720px){.t-stick .stickers img{width:calc(25% - 5px)}}
 .get .badge-img{width:52px;height:52px;border-radius:22%;margin-bottom:6px}
+.foot .foot-cities{margin-top:8px;color:var(--faint);font-size:14px}
+.foot .foot-cities a{display:inline-flex;align-items:center;min-height:44px;color:var(--muted);text-decoration:none}
+.foot .foot-cities a:hover{color:var(--text)}

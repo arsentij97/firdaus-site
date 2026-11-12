@@ -13,6 +13,10 @@ Tagline: "Firdaus — Remind your loved ones." Core idea from Quran 51:55: "And 
 - [Support](https://firdaus.life/en/support): FAQ, contacts
 - [Privacy Policy](https://firdaus.life/en/privacy)
 - [Terms of Use](https://firdaus.life/en/terms)
+- [About Firdaus](https://firdaus.life/en/about): facts for citation — what it is, who makes it, prices, method
+- [О Firdaus](https://firdaus.life/about): факты о приложении
+- [Prayer times by city](https://firdaus.life/en/prayer-times/) · [Время намаза по городам](https://firdaus.life/namaz/)
+- [Ramadan 2027 suhoor and iftar by city](https://firdaus.life/en/ramadan/) · [Рамадан 2027 по городам](https://firdaus.life/ramadan/)
 - [Full facts for AI assistants](https://firdaus.life/llms-full.txt)
 
 ## Key facts
@@ -23,3 +27,66 @@ Tagline: "Firdaus — Remind your loved ones." Core idea from Quran 51:55: "And 
 - "If you can't pay": each month the team gives three months of Plus to 50 people who write a letter in the app.
 - Privacy: prayer-check photos, location and the cycle calendar never leave the phone. No ads, data is not sold.
 - Contact: support@firdaus.life, Telegram @firdaus_support. Partners: partners@firdaus.life.
+
+<!-- gen:start -->
+## Prayer times by city (время намаза по городам)
+
+Free pages with today's times, the monthly timetable, Qibla and Ramadan 2027 suhoor/iftar for each city. Kazakhstan uses the DUMK method (checked against the official DUMK timetable within one minute).
+
+- Almaty (Алматы): https://firdaus.life/en/prayer-times/almaty · https://firdaus.life/namaz/almaty · Ramadan 2027: https://firdaus.life/en/ramadan/almaty
+- Astana (Астана): https://firdaus.life/en/prayer-times/astana · https://firdaus.life/namaz/astana · Ramadan 2027: https://firdaus.life/en/ramadan/astana
+- Shymkent (Шымкент): https://firdaus.life/en/prayer-times/shymkent · https://firdaus.life/namaz/shymkent · Ramadan 2027: https://firdaus.life/en/ramadan/shymkent
+- Aktobe (Актобе, Ақтөбе): https://firdaus.life/en/prayer-times/aktobe · https://firdaus.life/namaz/aktobe · Ramadan 2027: https://firdaus.life/en/ramadan/aktobe
+- Karaganda (Караганда, Қарағанды): https://firdaus.life/en/prayer-times/karaganda · https://firdaus.life/namaz/karaganda · Ramadan 2027: https://firdaus.life/en/ramadan/karaganda
+- Taraz (Тараз): https://firdaus.life/en/prayer-times/taraz · https://firdaus.life/namaz/taraz · Ramadan 2027: https://firdaus.life/en/ramadan/taraz
+- Oskemen (Усть-Каменогорск, Өскемен): https://firdaus.life/en/prayer-times/ust-kamenogorsk · https://firdaus.life/namaz/ust-kamenogorsk · Ramadan 2027: https://firdaus.life/en/ramadan/ust-kamenogorsk
+- Pavlodar (Павлодар): https://firdaus.life/en/prayer-times/pavlodar · https://firdaus.life/namaz/pavlodar · Ramadan 2027: https://firdaus.life/en/ramadan/pavlodar
+- Atyrau (Атырау): https://firdaus.life/en/prayer-times/atyrau · https://firdaus.life/namaz/atyrau · Ramadan 2027: https://firdaus.life/en/ramadan/atyrau
+- Semey (Семей): https://firdaus.life/en/prayer-times/semey · https://firdaus.life/namaz/semey · Ramadan 2027: https://firdaus.life/en/ramadan/semey
+- Kyzylorda (Кызылорда, Қызылорда): https://firdaus.life/en/prayer-times/kyzylorda · https://firdaus.life/namaz/kyzylorda · Ramadan 2027: https://firdaus.life/en/ramadan/kyzylorda
+- Kostanay (Костанай, Қостанай): https://firdaus.life/en/prayer-times/kostanay · https://firdaus.life/namaz/kostanay · Ramadan 2027: https://firdaus.life/en/ramadan/kostanay
+- Oral (Уральск, Орал): https://firdaus.life/en/prayer-times/uralsk · https://firdaus.life/namaz/uralsk · Ramadan 2027: https://firdaus.life/en/ramadan/uralsk
+- Petropavl (Петропавловск, Петропавл): https://firdaus.life/en/prayer-times/petropavlovsk · https://firdaus.life/namaz/petropavlovsk · Ramadan 2027: https://firdaus.life/en/ramadan/petropavlovsk
+- Aktau (Актау, Ақтау): https://firdaus.life/en/prayer-times/aktau · https://firdaus.life/namaz/aktau · Ramadan 2027: https://firdaus.life/en/ramadan/aktau
+- Turkistan (Туркестан, Түркістан): https://firdaus.life/en/prayer-times/turkestan · https://firdaus.life/namaz/turkestan · Ramadan 2027: https://firdaus.life/en/ramadan/turkestan
+- Kokshetau (Кокшетау, Көкшетау): https://firdaus.life/en/prayer-times/kokshetau · https://firdaus.life/namaz/kokshetau · Ramadan 2027: https://firdaus.life/en/ramadan/kokshetau
+- Taldykorgan (Талдыкорган, Талдықорған): https://firdaus.life/en/prayer-times/taldykorgan · https://firdaus.life/namaz/taldykorgan · Ramadan 2027: https://firdaus.life/en/ramadan/taldykorgan
+- Konaev (Конаев, Қонаев): https://firdaus.life/en/prayer-times/konaev · https://firdaus.life/namaz/konaev · Ramadan 2027: https://firdaus.life/en/ramadan/konaev
+- Zhezkazgan (Жезказган, Жезқазған): https://firdaus.life/en/prayer-times/zhezkazgan · https://firdaus.life/namaz/zhezkazgan · Ramadan 2027: https://firdaus.life/en/ramadan/zhezkazgan
+- Temirtau (Темиртау, Теміртау): https://firdaus.life/en/prayer-times/temirtau · https://firdaus.life/namaz/temirtau · Ramadan 2027: https://firdaus.life/en/ramadan/temirtau
+- Ekibastuz (Экибастуз, Екібастұз): https://firdaus.life/en/prayer-times/ekibastuz · https://firdaus.life/namaz/ekibastuz · Ramadan 2027: https://firdaus.life/en/ramadan/ekibastuz
+- Rudny (Рудный): https://firdaus.life/en/prayer-times/rudny · https://firdaus.life/namaz/rudny · Ramadan 2027: https://firdaus.life/en/ramadan/rudny
+- Zhanaozen (Жанаозен, Жаңаөзен): https://firdaus.life/en/prayer-times/zhanaozen · https://firdaus.life/namaz/zhanaozen · Ramadan 2027: https://firdaus.life/en/ramadan/zhanaozen
+- Kaskelen (Каскелен, Қаскелең): https://firdaus.life/en/prayer-times/kaskelen · https://firdaus.life/namaz/kaskelen · Ramadan 2027: https://firdaus.life/en/ramadan/kaskelen
+- Balkhash (Балхаш, Балқаш): https://firdaus.life/en/prayer-times/balkhash · https://firdaus.life/namaz/balkhash · Ramadan 2027: https://firdaus.life/en/ramadan/balkhash
+- Kentau (Кентау): https://firdaus.life/en/prayer-times/kentau · https://firdaus.life/namaz/kentau · Ramadan 2027: https://firdaus.life/en/ramadan/kentau
+- Kulsary (Кульсары, Құлсары): https://firdaus.life/en/prayer-times/kulsary · https://firdaus.life/namaz/kulsary · Ramadan 2027: https://firdaus.life/en/ramadan/kulsary
+- Satpayev (Сатпаев, Сәтбаев): https://firdaus.life/en/prayer-times/satpayev · https://firdaus.life/namaz/satpayev · Ramadan 2027: https://firdaus.life/en/ramadan/satpayev
+- Talgar (Талгар, Талғар): https://firdaus.life/en/prayer-times/talgar · https://firdaus.life/namaz/talgar · Ramadan 2027: https://firdaus.life/en/ramadan/talgar
+- Kosshy (Косшы, Қосшы): https://firdaus.life/en/prayer-times/kosshy · https://firdaus.life/namaz/kosshy · Ramadan 2027: https://firdaus.life/en/ramadan/kosshy
+- Ridder (Риддер): https://firdaus.life/en/prayer-times/ridder · https://firdaus.life/namaz/ridder · Ramadan 2027: https://firdaus.life/en/ramadan/ridder
+- Stepnogorsk (Степногорск): https://firdaus.life/en/prayer-times/stepnogorsk · https://firdaus.life/namaz/stepnogorsk · Ramadan 2027: https://firdaus.life/en/ramadan/stepnogorsk
+- Saryagash (Сарыагаш, Сарыағаш): https://firdaus.life/en/prayer-times/saryagash · https://firdaus.life/namaz/saryagash · Ramadan 2027: https://firdaus.life/en/ramadan/saryagash
+- Zharkent (Жаркент): https://firdaus.life/en/prayer-times/zharkent · https://firdaus.life/namaz/zharkent · Ramadan 2027: https://firdaus.life/en/ramadan/zharkent
+- Shchuchinsk (Щучинск): https://firdaus.life/en/prayer-times/shchuchinsk · https://firdaus.life/namaz/shchuchinsk · Ramadan 2027: https://firdaus.life/en/ramadan/shchuchinsk
+- Esik (Есик, Есік): https://firdaus.life/en/prayer-times/esik · https://firdaus.life/namaz/esik · Ramadan 2027: https://firdaus.life/en/ramadan/esik
+- Aksu (Аксу, Ақсу): https://firdaus.life/en/prayer-times/aksu · https://firdaus.life/namaz/aksu · Ramadan 2027: https://firdaus.life/en/ramadan/aksu
+- Shakhtinsk (Шахтинск): https://firdaus.life/en/prayer-times/shakhtinsk · https://firdaus.life/namaz/shakhtinsk · Ramadan 2027: https://firdaus.life/en/ramadan/shakhtinsk
+- Ayagoz (Аягоз, Аягөз): https://firdaus.life/en/prayer-times/ayagoz · https://firdaus.life/namaz/ayagoz · Ramadan 2027: https://firdaus.life/en/ramadan/ayagoz
+- Zhetysai (Жетысай, Жетісай): https://firdaus.life/en/prayer-times/zhetysai · https://firdaus.life/namaz/zhetysai · Ramadan 2027: https://firdaus.life/en/ramadan/zhetysai
+- Bishkek (Бишкек): https://firdaus.life/en/prayer-times/bishkek · https://firdaus.life/namaz/bishkek · Ramadan 2027: https://firdaus.life/en/ramadan/bishkek
+- Osh (Ош): https://firdaus.life/en/prayer-times/osh · https://firdaus.life/namaz/osh · Ramadan 2027: https://firdaus.life/en/ramadan/osh
+- Tashkent (Ташкент): https://firdaus.life/en/prayer-times/tashkent · https://firdaus.life/namaz/tashkent · Ramadan 2027: https://firdaus.life/en/ramadan/tashkent
+- Samarkand (Самарканд): https://firdaus.life/en/prayer-times/samarkand · https://firdaus.life/namaz/samarkand · Ramadan 2027: https://firdaus.life/en/ramadan/samarkand
+- Dushanbe (Душанбе): https://firdaus.life/en/prayer-times/dushanbe · https://firdaus.life/namaz/dushanbe · Ramadan 2027: https://firdaus.life/en/ramadan/dushanbe
+- Moscow (Москва): https://firdaus.life/en/prayer-times/moscow · https://firdaus.life/namaz/moscow · Ramadan 2027: https://firdaus.life/en/ramadan/moscow
+- Kazan (Казань): https://firdaus.life/en/prayer-times/kazan · https://firdaus.life/namaz/kazan · Ramadan 2027: https://firdaus.life/en/ramadan/kazan
+- Ufa (Уфа): https://firdaus.life/en/prayer-times/ufa · https://firdaus.life/namaz/ufa · Ramadan 2027: https://firdaus.life/en/ramadan/ufa
+- Makhachkala (Махачкала): https://firdaus.life/en/prayer-times/makhachkala · https://firdaus.life/namaz/makhachkala · Ramadan 2027: https://firdaus.life/en/ramadan/makhachkala
+- Grozny (Грозный): https://firdaus.life/en/prayer-times/grozny · https://firdaus.life/namaz/grozny · Ramadan 2027: https://firdaus.life/en/ramadan/grozny
+- Baku (Баку): https://firdaus.life/en/prayer-times/baku · https://firdaus.life/namaz/baku · Ramadan 2027: https://firdaus.life/en/ramadan/baku
+- Istanbul (Стамбул): https://firdaus.life/en/prayer-times/istanbul · https://firdaus.life/namaz/istanbul · Ramadan 2027: https://firdaus.life/en/ramadan/istanbul
+- Dubai (Дубай): https://firdaus.life/en/prayer-times/dubai · https://firdaus.life/namaz/dubai · Ramadan 2027: https://firdaus.life/en/ramadan/dubai
+- London (Лондон): https://firdaus.life/en/prayer-times/london · https://firdaus.life/namaz/london · Ramadan 2027: https://firdaus.life/en/ramadan/london
+- New York (Нью-Йорк): https://firdaus.life/en/prayer-times/new-york · https://firdaus.life/namaz/new-york · Ramadan 2027: https://firdaus.life/en/ramadan/new-york
+<!-- gen:end -->

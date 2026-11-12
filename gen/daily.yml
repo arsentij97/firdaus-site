@@ -1,0 +1,51 @@
+# Ежедневная пересборка страниц «Время намаза» на firdaus.life.
+# Место файла в репозитории arsentij97/firdaus-site: .github/workflows/daily.yml
+# (у токена gh на компьютере нет права workflow — положить через веб,
+#  шаги в docs/dela/seo-servisy.md основного репозитория).
+#
+# 19:05 UTC — полночь и пять минут в Казахстане (UTC+5): у городов новые сутки,
+# статический текст «сегодня» и таблица месяца для поисковиков обновляются.
+name: Время намаза — пересборка
+on:
+  schedule:
+    - cron: '5 19 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: daily-namaz
+  cancel-in-progress: false
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Страницы городов
+        run: node gen/pages.mjs .
+      - name: Коммит и пуш
+        id: push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "changed=0" >> "$GITHUB_OUTPUT"; exit 0; fi
+          git commit -m "Время намаза на $(date -u +%F)"
+          git push
+          echo "changed=1" >> "$GITHUB_OUTPUT"
+      - name: Пересобрать GitHub Pages
+        if: steps.push.outputs.changed == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds" || true
+      - name: IndexNow (Bing, Яндекс)
+        if: steps.push.outputs.changed == '1'
+        run: node gen/indexnow.mjs . --changed

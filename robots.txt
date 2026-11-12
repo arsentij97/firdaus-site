@@ -4,6 +4,7 @@ Allow: /
 Disallow: /r/
 Disallow: /join/
 Disallow: /together/
+Disallow: /gen/
 
 User-agent: GPTBot
 Allow: /

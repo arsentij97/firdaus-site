@@ -20,6 +20,17 @@ window.FIRDAUS = {
   partnersEmail: 'partners@firdaus.life',
   /* Своя схема приложения — mobile/app.json, "scheme". */
   scheme: 'firdaus://',
+  /* Метка кампании App Store (App Store Connect → Аналитика приложений →
+     Источники → «Создать ссылку кампании», число после pt=). Стоит — кнопки
+     App Store несут pt и ct=<страница>, и Apple покажет установки по каждой
+     странице сайта. Пусто — ссылки без меток. */
+  appStorePt: '',
+  /* АНАЛИТИКА САЙТА — одна строка. Пусто — на сайте нет ни одного счётчика.
+     Ключ проекта PostHog (phc_…, тот же проект, что у приложения, ЕС).
+     Режим без cookie и без хранения на устройстве: баннер согласия не нужен.
+     Грузится после загрузки страницы и не мешает скорости. Разбор и
+     альтернативы — docs/dela/seo-servisy.md. */
+  posthogKey: '',
 };
 
 (function () {
@@ -58,7 +69,15 @@ window.FIRDAUS = {
 
     /* адреса из констант */
     each('a[data-link="appstore"]', function (a) {
-      if (C.appStoreLive) { a.href = C.appStoreUrl; return; }
+      if (C.appStoreLive) {
+        a.href = C.appStoreUrl;
+        if (C.appStorePt) {
+          var ct = ('site' + path.replace(/\.html$/, '').replace(/[^a-z0-9]+/gi, '-')).replace(/-+$/, '').slice(0, 40);
+          a.href += (a.href.indexOf('?') < 0 ? '?' : '&') + 'pt=' + encodeURIComponent(C.appStorePt) + '&ct=' + encodeURIComponent(ct) + '&mt=8';
+        }
+        a.addEventListener('click', function () { if (window.posthog && window.posthog.capture) window.posthog.capture('appstore_click', { page: path }); });
+        return;
+      }
       a.removeAttribute('href');
       a.setAttribute('aria-disabled', 'true');
       a.classList.add('soon');
@@ -90,4 +109,31 @@ window.FIRDAUS = {
       Array.prototype.forEach.call(items, function (el) { el.classList.add('is-in'); });
     }
   });
+
+  /* аналитика: PostHog без cookie, после загрузки страницы. Заглушка —
+     как в официальном сниппете: очередь _i и вызовы до загрузки библиотеки. */
+  if (C.posthogKey && location.protocol === 'https:') {
+    var ph = window.posthog = [];
+    ph.__SV = 1;
+    ph._i = [[C.posthogKey, {
+      api_host: 'https://eu.i.posthog.com',
+      persistence: 'memory',
+      person_profiles: 'identified_only',
+      autocapture: false,
+      capture_pageview: true,
+      capture_pageleave: true,
+      disable_session_recording: true,
+      disable_surveys: true,
+    }, 'posthog']];
+    ph.capture = function () { ph.push(['capture'].concat(Array.prototype.slice.call(arguments))); };
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        var sc = document.createElement('script');
+        sc.async = true;
+        sc.crossOrigin = 'anonymous';
+        sc.src = 'https://eu-assets.i.posthog.com/static/array.js';
+        document.head.appendChild(sc);
+      }, 1500);
+    });
+  }
 })();

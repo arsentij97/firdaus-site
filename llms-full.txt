@@ -1,6 +1,6 @@
 # Firdaus — full facts
 
-Updated 13 November 2026. Site: https://firdaus.life (Russian) and https://firdaus.life/en/ (English).
+Updated 13 November 2026. About page: https://firdaus.life/en/about Site: https://firdaus.life (Russian) and https://firdaus.life/en/ (English).
 
 ## What it is
 
@@ -25,6 +25,24 @@ The idea comes from Quran 51:55: «وَذَكِّرْ فَإِنَّ ٱلذِّ�
 - Focus: choose distracting apps; at adhan time iPhone blocks them (Apple Screen Time) until you pray.
 - Umma: feed, stories, replies; personal chats and groups, voice messages; Instants (a live photo to loved ones after prayer). Posts are checked before publishing; report and block are available everywhere.
 - For sisters: days without prayer are marked privately and stored only on the phone.
+
+## How prayer times are calculated (method by country)
+
+The website and the app use the same calculation (adhan 4.4.4) with the same country presets.
+
+- Kazakhstan — DUMK (Spiritual Administration of Muslims of Kazakhstan, ҚМДБ): Fajr and Isha at 15°, Hanafi Asr, plus DUMK's safety margin (ihtiyat): sunrise −3 min, Dhuhr +2, Asr +3, Maghrib +3 south of 48° latitude; −5/+4/+5/+5 north of 48°. Checked against the official DUMK timetable (api.muftyat.kz) for six cities, every day of 2026 and 2027: within one minute. With a connection the app uses the DUMK timetable itself. Time zone UTC+5 for the whole country.
+- Kyrgyzstan — Muftiate of Kyrgyzstan: Fajr 18°, Isha 16°, Hanafi Asr, Maghrib 7 minutes after sunset.
+- Uzbekistan, Tajikistan — Muslim World League angles (18°/17°), Hanafi Asr (not yet checked against a national timetable).
+- Russia — Council of Muftis of Russia angles: Fajr 18°, Isha 15°, sunrise −4, Dhuhr +5, Maghrib +5 minutes; standard Asr. Tatarstan: the app uses the official timetable of the Muftiate of Tatarstan (Hanafi Asr).
+- Azerbaijan — Caucasus Muslims Board: Fajr 16°, Isha 15°, Hanafi Asr, Maghrib 16 minutes after sunset.
+- Türkiye — Diyanet (the app downloads the Diyanet timetable). UAE — Dubai method (18.2°). United Kingdom — Moonsighting Committee Worldwide. USA — ISNA (15°).
+
+## Prayer times and Ramadan 2027 by city (website)
+
+- Prayer times today, this week and this month, Qibla direction in degrees and distance to Mecca, for cities in Kazakhstan (all regional centres and towns over ~50,000 people), Kyrgyzstan, Uzbekistan, Tajikistan, Russia, Azerbaijan, and Istanbul, Dubai, London, New York: https://firdaus.life/namaz/ (Russian) and https://firdaus.life/en/prayer-times/ (English). Example: https://firdaus.life/namaz/almaty
+- Ramadan 2027 (1448 AH) suhoor and iftar times for every day in the same cities: https://firdaus.life/ramadan/ and https://firdaus.life/en/ramadan/
+- Ramadan 1448 by the Umm al-Qura calendar: 8 February – 8 March 2027 (29 days); Eid al-Fitr expected 9 March 2027. Local authorities (in Kazakhstan — DUMK) announce the exact dates by the moon.
+- Suhoor ends at the start of Fajr; iftar is at Maghrib.
 
 ## Prices and subscriptions
 
