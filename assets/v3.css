@@ -78,7 +78,7 @@ h3{font:650 clamp(20px,1.7vw,24px)/1.25 var(--sans);letter-spacing:-.02em;text-w
 /* ── фото: общий слой зерна, одна обработка на все кадры ── */
 .ph{position:relative;overflow:hidden;background:#141a15;isolation:isolate}
 .ph picture,.ph img{width:100%;height:100%;object-fit:cover}
-.ph::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.16;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .5 0 0 0 0 .5 0 0 0 0 .5 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+.ph::after{content:"";position:absolute;inset:0;pointer-events:none;background:url(/assets/img/v3-grain.png);background-size:72px 72px;opacity:.55}
 
 /* ── первый экран ── */
 .hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;background:var(--night)}
@@ -130,7 +130,7 @@ h3{font:650 clamp(20px,1.7vw,24px)/1.25 var(--sans);letter-spacing:-.02em;text-w
 .manifest{text-align:center}
 .manifest .ar{font-family:"Asr","Geeza Pro","Noto Naskh Arabic",serif;font-size:clamp(26px,3.4vw,40px);line-height:2;color:var(--moon);direction:rtl;max-width:22em;margin:0 auto;opacity:.92}
 .manifest .lit{margin:clamp(36px,5vw,56px) auto 0;max-width:20em;font:600 clamp(30px,4.8vw,62px)/1.16 var(--sans);letter-spacing:-.035em;text-wrap:balance}
-.lit .wd{color:rgba(250,246,239,.16);transition:color .5s var(--ease)}
+.lit .wd{color:rgba(250,246,239,.38);transition:color .5s var(--ease)}
 .lit .wd.on{color:var(--paper)}
 .lit .wd.hl.on{color:var(--moon)}
 .manifest .src{margin-top:28px;font-size:14px;color:var(--mist-2);letter-spacing:.01em}
@@ -336,3 +336,6 @@ h3{font:650 clamp(20px,1.7vw,24px)/1.25 var(--sans);letter-spacing:-.02em;text-w
 /* живое время появляется без сдвига вёрстки: место занято с первого кадра */
 .live[hidden]{display:inline-flex!important;visibility:hidden}
 .today[hidden]{display:block!important;visibility:hidden}
+
+/* скорость: секции ниже первого экрана не считаются, пока до них не дошли */
+.pillar,#ceny,#pricing,#faq,.final{content-visibility:auto;contain-intrinsic-size:auto 1400px}
