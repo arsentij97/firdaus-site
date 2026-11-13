@@ -307,6 +307,36 @@ window.FIRDAUS = {
     $('code').textContent = id;
     $('code').hidden = false;
   }
+  /*
+    ЗОВ НА НАМАЗ ТОМУ, У КОГО FIRDAUS НЕТ (0370, docs/103). Приложение кладёт в
+    ссылку имя, намаз и время: `?n=Арсен&p=asr&t=16:42`. Тогда карточка говорит
+    голосом человека — «Арсен зовёт тебя на Аср · 16:42», — а не безлично.
+    Всё из адреса идёт только текстом (textContent), имя — до 40 знаков, время —
+    только вида ЧЧ:ММ, намаз — только из пяти. Чего нет или не подошло — прежняя
+    карточка.
+  */
+  var q = new URLSearchParams(location.search);
+  var who = (q.get('n') || '').replace(/[\u0000-\u001f\u007f‎‏‪-‮⁦-⁩<>]/g, '').trim().slice(0, 40);
+  var P = ru
+    ? { fajr: 'Фаджр', dhuhr: 'Зухр', asr: 'Аср', maghrib: 'Магриб', isha: 'Ишу' }
+    : { fajr: 'Fajr', dhuhr: 'Dhuhr', asr: 'Asr', maghrib: 'Maghrib', isha: 'Isha' };
+  var pr = P.hasOwnProperty(q.get('p')) ? P[q.get('p')] : '';
+  var at = /^([01]?\d|2[0-3]):[0-5]\d$/.test(q.get('t') || '') ? q.get('t') : '';
+  if (who && pr && (kind === 'join' || kind === 'together')) {
+    var h = $('t');
+    h.textContent = '';
+    h.appendChild(document.createTextNode(who + (ru ? ' зовёт тебя ' : ' is calling you to ')));
+    var em = document.createElement('em');
+    em.className = 'warm';
+    em.textContent = (ru ? 'на ' : '') + pr;
+    h.appendChild(em);
+    /* Без «сегодня»: ссылку могут открыть и завтра. */
+    var nom = ru ? { 'Ишу': 'Иша' }[pr] || pr : pr;
+    $('p').textContent = (at ? nom + (ru ? ' — в ' : ' — at ') + at + '. ' : '') +
+      (ru ? 'В Firdaus друзья зовут друг друга на намаз и отвечают одним касанием: «Иду».'
+          : 'On Firdaus, friends call each other to prayer and answer with one tap: “Coming”.');
+    document.title = ru ? who + ' зовёт тебя на ' + pr + ' — Firdaus' : who + ' is calling you to ' + pr + ' — Firdaus';
+  }
   /* Своя схема приложения: маршруты join и together в нём есть. Для открытки
      маршрута по схеме нет, открываем просто приложение. */
   var deep = kind === 'join' || kind === 'together' ? kind + '/' + id : '';
