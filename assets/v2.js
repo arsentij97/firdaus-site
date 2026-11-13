@@ -66,7 +66,7 @@
     }
     window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(draw); } }, { passive: true });
     window.addEventListener('resize', draw);
-    draw();
+    requestAnimationFrame(function () { requestAnimationFrame(draw); });
   }
 
   /* ── 2. главы и экран телефона ── */
