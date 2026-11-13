@@ -63,13 +63,13 @@
   doc.addEventListener('DOMContentLoaded', function () {
     header();
     reveal();
-    stack();
-    lit();
-    rails();
-    zoom();
     tasbih();
     share();
     namaz();
+    /* остальное — когда страница уже нарисована: первый экран не ждёт */
+    var later = function () { stack(); lit(); rails(); zoom(); };
+    var idle = window.requestIdleCallback || function (f) { setTimeout(f, 300); };
+    if (doc.readyState === 'complete') idle(later); else window.addEventListener('load', function () { idle(later); });
   });
 
   /* ── 1. шапка ── */

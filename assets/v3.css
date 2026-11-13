@@ -42,8 +42,8 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 h1{font:700 clamp(50px,11.4vw,136px)/.94 var(--sans);letter-spacing:-.05em;text-wrap:balance}
 h2,.h2{font:700 clamp(38px,6.2vw,84px)/1 var(--sans);letter-spacing:-.045em;text-wrap:balance}
 h3{font:650 clamp(20px,1.7vw,24px)/1.25 var(--sans);letter-spacing:-.02em;text-wrap:balance}
-.lead{font-size:clamp(18px,1.6vw,22px);line-height:1.5;color:var(--mist);max-width:32em;text-wrap:pretty}
-.body{color:var(--mist);font-size:clamp(17px,1.3vw,19px);line-height:1.6;max-width:31em;text-wrap:pretty}
+.lead{font-size:clamp(18px,1.6vw,22px);line-height:1.5;color:var(--mist);max-width:32em}
+.body{color:var(--mist);font-size:clamp(17px,1.3vw,19px);line-height:1.6;max-width:31em}
 .lead b,.body b{color:var(--paper);font-weight:600}
 .sec{padding:clamp(96px,13vw,180px) 0}
 
