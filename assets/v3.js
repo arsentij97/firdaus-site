@@ -51,7 +51,8 @@
     var fall = lang === 'en' ? 'Europe/London' : 'Asia/Almaty';
     var key = CITIES[tz] ? tz : fall;
     var c = CITIES[key];
-    return { tz: key, cc: c[0], lat: c[1], lon: c[2], name: lang === 'en' ? c[4] : c[3] };
+    var GENC = {"Алматы":"Алматы","Костанай":"Костаная","Актобе":"Актобе","Актау":"Актау","Атырау":"Атырау","Уральск":"Уральска","Кызылорда":"Кызылорды","Бишкек":"Бишкека","Ташкент":"Ташкента","Самарканд":"Самарканда","Душанбе":"Душанбе","Баку":"Баку","Москва":"Москвы","Стамбул":"Стамбула","Дубай":"Дубая","Лондон":"Лондона","Берлин":"Берлина","Нью-Йорк":"Нью-Йорка"};
+    return { tz: key, cc: c[0], lat: c[1], lon: c[2], name: lang === 'en' ? c[4] : c[3], gen: lang === 'en' ? c[4] : (GENC[c[3]] || c[3]) };
   }
 
   var NAMES = lang === 'en'
@@ -65,12 +66,53 @@
     reveal();
     tasbih();
     share();
+    soon();
     namaz();
     /* остальное — когда страница уже нарисована: первый экран не ждёт */
     var later = function () { stack(); lit(); rails(); zoom(); };
     var idle = window.requestIdleCallback || function (f) { setTimeout(f, 300); };
     if (doc.readyState === 'complete') idle(later); else window.addEventListener('load', function () { idle(later); });
   });
+
+
+  /* ── «Скоро в App Store»: не мёртвая кнопка, а лист «напомнить в день выхода» ──
+     site.js снимает ссылку, пока приложения нет в магазине (appStoreLive).
+     Своего сервера у сайта нет — запись письмом на почту поддержки. */
+  function soon() {
+    var C = window.FIRDAUS || {};
+    var btns = $$('a.soon[data-link="appstore"]');
+    if (!btns.length || C.appStoreLive) return;
+    var T = lang === 'en'
+      ? { h: 'Firdaus is coming to the App Store', p: 'We’re getting ready for release. Write to us and we’ll send one email on launch day — no newsletters.', mail: 'Remind me on launch day', subj: 'Waiting for Firdaus', body: 'Assalamu alaikum! Please let me know when Firdaus is on the App Store.', share: 'Invite your people', close: 'Close' }
+      : { h: 'Firdaus скоро в App Store', p: 'Готовим выход. Напиши нам — пришлём одно письмо в день, когда Firdaus появится в App Store. Без рассылок.', mail: 'Напомнить в день выхода', subj: 'Жду Firdaus', body: 'Ассаляму алейкум! Напишите мне, когда Firdaus выйдет в App Store.', share: 'Позвать своих', close: 'Закрыть' };
+    var d = doc.createElement('dialog');
+    d.className = 'sheet';
+    d.setAttribute('aria-labelledby', 'sheet-h');
+    d.innerHTML = '<button class="x" type="button"><span class="sr"></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>' +
+      '<img src="/assets/logo-68.webp" width="56" height="56" alt=""><h3 id="sheet-h"></h3><p></p>' +
+      '<div class="acts"><a class="btn"></a><button class="btn ghost" type="button" data-share-sheet></button></div>';
+    $('h3', d).textContent = T.h;
+    $('p', d).textContent = T.p;
+    $('.x .sr', d).textContent = T.close;
+    var mail = $('a.btn', d);
+    mail.textContent = T.mail;
+    mail.href = 'mailto:' + (C.email || 'support@firdaus.life') + '?subject=' + encodeURIComponent(T.subj) + '&body=' + encodeURIComponent(T.body);
+    var sh = $('[data-share-sheet]', d);
+    sh.textContent = T.share;
+    sh.addEventListener('click', function () { var m = $('[data-share]'); if (m) m.click(); });
+    $('.x', d).addEventListener('click', function () { d.close(); });
+    d.addEventListener('click', function (e) { if (e.target === d) d.close(); });
+    doc.body.appendChild(d);
+    btns.forEach(function (a) {
+      a.removeAttribute('aria-disabled');
+      a.setAttribute('role', 'button');
+      a.setAttribute('tabindex', '0');
+      a.setAttribute('aria-haspopup', 'dialog');
+      var open = function (e) { e.preventDefault(); if (d.showModal) d.showModal(); else d.setAttribute('open', ''); };
+      a.addEventListener('click', open);
+      a.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') open(e); });
+    });
+  }
 
   /* ── 1. шапка ── */
   function header() {
@@ -241,6 +283,7 @@
   function namaz() {
     var city = pickCity();
     $$('[data-city-name]').forEach(function (n) { n.textContent = city.name; });
+    $$('[data-city-gen]').forEach(function (n) { n.textContent = city.gen; });
     var go = function () {
       if (window.FirdausNamaz) return run(city);
       var s = doc.createElement('script');
