@@ -361,6 +361,26 @@ h3{font:650 clamp(20px,1.7vw,24px)/1.25 var(--sans);letter-spacing:-.02em;text-w
 .sheet .x{position:absolute;top:14px;right:14px;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;color:var(--mist)}
 .sheet .x svg{width:20px;height:20px}
 @media (min-width:761px){.sheet{margin:auto;border-radius:28px}}
+/* лист ожидания в листе: поле 17px (iPhone не увеличивает страницу), цели 54/44 */
+.wl{margin-top:22px;display:flex;flex-direction:column;gap:10px}
+.wl[hidden]{display:none}
+.wl label{font:600 14px/1.3 var(--sans);color:var(--paper)}
+.wl input{width:100%;min-height:54px;padding:0 18px;border:0;border-radius:16px;background:rgba(250,246,239,.06);box-shadow:inset 0 0 0 1px var(--line-2);color:var(--paper);font:500 17px/1.2 var(--sans);transition:box-shadow .2s}
+.wl input::placeholder{color:var(--mist-2)}
+.wl input:focus{outline:none;box-shadow:inset 0 0 0 2px var(--moon)}
+.wl input[aria-invalid=true]{box-shadow:inset 0 0 0 2px #F0A497}
+.wl .btn{width:100%}
+.wl .btn[disabled]{opacity:.7;cursor:progress;transform:none}
+.sheet .wl-msg{margin-top:12px;font-size:15px;line-height:1.45;color:var(--mist)}
+.sheet .wl-msg:empty{margin:0}
+.sheet .wl-msg:focus{outline:none}
+.sheet .wl-msg.is-ok{margin-top:22px;padding:16px 18px;border-radius:16px;background:rgba(29,184,119,.12);color:var(--paper);font-size:17px;font-weight:600}
+.sheet .wl-msg.is-err{color:#F0A497}
+.wl-change{min-height:44px;margin-top:4px;color:var(--moon);font-size:15px;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.wl-change[hidden]{display:none}
+.sheet .wl-note{margin-top:12px;font-size:13px;line-height:1.5;color:var(--mist-2)}
+.sheet .wl-note a{color:var(--mist);text-underline-offset:2px}
+.sheet .wl-note+.acts{margin-top:18px}
 
 /* ── сцена «контраст» по прокрутке: чужие уведомления сыплются, Фокус закрывает — остаётся намаз ── */
 .ct-scene{position:relative;height:210vh;margin-top:clamp(24px,4vw,48px)}

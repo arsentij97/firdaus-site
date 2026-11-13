@@ -75,25 +75,60 @@
   });
 
 
-  /* ── «Скоро в App Store»: не мёртвая кнопка, а лист «напомнить в день выхода» ──
-     site.js снимает ссылку, пока приложения нет в магазине (appStoreLive).
-     Своего сервера у сайта нет — запись письмом на почту поддержки. */
-  function soon() {
-    var C = window.FIRDAUS || {};
-    var btns = $$('a.soon[data-link="appstore"]');
-    if (!btns.length || C.appStoreLive) return;
-    var T = lang === 'en'
-      ? { h: 'Firdaus is coming to the App Store', p: 'We’re getting ready for release. Write to us and we’ll send one email on launch day — no newsletters.', mail: 'Remind me on launch day', subj: 'Waiting for Firdaus', body: 'Assalamu alaikum! Please let me know when Firdaus is on the App Store.', share: 'Invite your people', close: 'Close' }
-      : { h: 'Firdaus скоро в App Store', p: 'Готовим выход. Напиши нам — пришлём одно письмо в день, когда Firdaus появится в App Store. Без рассылок.', mail: 'Напомнить в день выхода', subj: 'Жду Firdaus', body: 'Ассаляму алейкум! Напишите мне, когда Firdaus выйдет в App Store.', share: 'Позвать своих', close: 'Закрыть' };
-    var d = doc.createElement('dialog');
-    d.className = 'sheet';
-    d.setAttribute('aria-labelledby', 'sheet-h');
-    d.innerHTML = '<button class="x" type="button"><span class="sr"></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>' +
-      '<img src="/assets/logo-68.webp" width="56" height="56" alt=""><h3 id="sheet-h"></h3><p></p>' +
-      '<div class="acts"><a class="btn"></a><button class="btn ghost" type="button" data-share-sheet></button></div><p class="alt" aria-live="polite"></p>';
-    $('h3', d).textContent = T.h;
-    $('p', d).textContent = T.p;
-    $('.x .sr', d).textContent = T.close;
+  /* лист ожидания: проверка, запись, ответ по-человечески */
+  function waitlist(C, T, d) {
+    var form = $('form', d), input = $('input', form), btn = $('button', form);
+    var msg = $('#wl-msg', d), change = $('.wl-change', d), note = $('#wl-note', d);
+    $('label', form).textContent = T.label;
+    input.placeholder = T.ph;
+    btn.textContent = T.btn;
+    change.textContent = T.change;
+    note.textContent = T.note;
+    var pl = doc.createElement('a'); pl.href = T.privacyUrl; pl.textContent = T.privacy; note.appendChild(pl);
+    var KEY = 'firdaus-waitlist';
+    var mem = { get: function () { try { return localStorage.getItem(KEY); } catch (e) { return null; } }, set: function (v) { try { localStorage.setItem(KEY, v); } catch (e) { /* частный режим */ } } };
+    var say = function (text, kind) { msg.textContent = text; msg.className = 'wl-msg' + (kind ? ' ' + kind : ''); };
+    var done = function (text) { form.hidden = true; change.hidden = false; say(text, 'is-ok'); };
+    if (mem.get()) done(T.again);
+    change.addEventListener('click', function () { form.hidden = false; change.hidden = true; say(''); input.value = ''; input.focus(); });
+    input.addEventListener('input', function () { if (msg.classList.contains('is-err')) { say(''); input.removeAttribute('aria-invalid'); } });
+    var q = new URLSearchParams(location.search);
+    var utm = (q.get('utm_source') || '').slice(0, 40);
+    var camp = (q.get('utm_campaign') || '').slice(0, 40);
+    var source = (utm ? 'utm:' + utm + (camp ? '/' + camp : '') : location.pathname).slice(0, 120);
+    var busy = false;
+    var fail = function (text) { say(text, 'is-err'); input.setAttribute('aria-invalid', 'true'); input.focus(); };
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (busy) return;
+      var v = input.value.trim();
+      if (!v) return fail(T.empty);
+      /* «username» без собаки — это Telegram */
+      if (/^[A-Za-z0-9_]{5,32}$/.test(v)) v = '@' + v;
+      if (v.indexOf('@') < 0 && !/t(elegram)?\.me\//i.test(v)) return fail(T.format);
+      busy = true; btn.disabled = true; btn.textContent = T.busyBtn; form.setAttribute('aria-busy', 'true'); say('');
+      fetch(C.supabaseUrl + '/rest/v1/rpc/join_waitlist', {
+        method: 'POST',
+        headers: { apikey: C.supabaseKey, Authorization: 'Bearer ' + C.supabaseKey, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ contact: v, lang: lang, source: source }),
+      })
+        .then(function (r) { return r.ok ? r.json() : { ok: false, reason: 'net' }; })
+        .then(function (r) {
+          if (r && r.ok) {
+            mem.set('1');
+            done(T.ok);
+            msg.focus();
+            if (window.posthog && window.posthog.capture) window.posthog.capture('waitlist_join', { kind: v.charAt(0) === '@' || /t(elegram)?\.me/i.test(v) ? 'telegram' : 'email', source: source });
+          } else fail(T[r && r.reason === 'format' ? 'format' : r && r.reason === 'busy' ? 'busy' : 'net']);
+        })
+        .catch(function () { fail(T.net); })
+        .then(function () { busy = false; btn.disabled = false; btn.textContent = T.btn; form.removeAttribute('aria-busy'); });
+    });
+    d.addEventListener('close', function () { if (msg.classList.contains('is-err')) { say(''); input.removeAttribute('aria-invalid'); } });
+  }
+
+  /* без ключа базы — прежний путь: письмо на почту поддержки */
+  function mailFallback(C, T, d) {
     var mail = $('a.btn', d);
     mail.textContent = T.mail;
     mail.href = 'mailto:' + (C.email || 'support@firdaus.life') + '?subject=' + encodeURIComponent(T.subj) + '&body=' + encodeURIComponent(T.body);
@@ -107,11 +142,55 @@
       var b = doc.createElement('b'); b.textContent = addr; alt.appendChild(b);
       alt.appendChild(doc.createTextNode(lang === 'en' ? ' (address copied).' : ' (адрес скопирован).'));
     });
+  }
+
+  /* ── «Скоро в App Store»: не мёртвая кнопка, а лист ожидания ──
+     site.js снимает ссылку, пока приложения нет в магазине (appStoreLive).
+     Форма «почта или Telegram» пишет в базу приложения функцией join_waitlist
+     (supabase/migrations/0370): одно сообщение в день выхода, без рассылок.
+     Нет ключа в site.js — запасной путь: письмо на почту поддержки. */
+  function soon() {
+    var C = window.FIRDAUS || {};
+    var btns = $$('a.soon[data-link="appstore"]');
+    if (!btns.length || C.appStoreLive) return;
+    var en = lang === 'en';
+    var T = en
+      ? { h: 'Firdaus is coming to the App Store', p: 'We’re getting ready for release. Leave your email or Telegram and we’ll message you once — on the day Firdaus is out.', label: 'Email or Telegram', ph: 'name@mail.com or @username', btn: 'Remind me on launch day', busyBtn: 'Saving…',
+          ok: 'You’re on the list ✓ We’ll write on launch day.', again: 'You’re already on the list ✓ We’ll write on launch day.', change: 'Use another address',
+          empty: 'Enter your email or Telegram, e.g. name@mail.com or @username.', format: 'That doesn’t look like an email or a Telegram username. Check for typos.', busy: 'Lots of sign-ups right now. Please try again in a minute.', net: 'Couldn’t send — check your connection and try again.',
+          note: 'Only to tell you about the launch. No newsletters. ', privacy: 'Privacy policy', privacyUrl: '/en/privacy',
+          mail: 'Remind me on launch day', subj: 'Waiting for Firdaus', body: 'Assalamu alaikum! Please let me know when Firdaus is on the App Store.', share: 'Invite your people', close: 'Close' }
+      : { h: 'Firdaus скоро в App Store', p: 'Готовим выход. Оставь почту или Telegram — напишем один раз, в день, когда Firdaus появится в App Store.', label: 'Почта или Telegram', ph: 'name@mail.ru или @username', btn: 'Напомнить в день выхода', busyBtn: 'Записываем…',
+          ok: 'Записали ✓ Напишем в день выхода.', again: 'Ты уже в списке ✓ Напишем в день выхода.', change: 'Записать другой адрес',
+          empty: 'Впиши почту или Telegram — например, name@mail.ru или @username.', format: 'Не похоже на почту или Telegram. Проверь, нет ли опечатки.', busy: 'Сейчас записывается много людей. Попробуй через минуту.', net: 'Не получилось отправить — проверь интернет и попробуй ещё раз.',
+          note: 'Только чтобы сообщить о запуске. Без рассылок. ', privacy: 'Политика конфиденциальности', privacyUrl: '/privacy',
+          mail: 'Напомнить в день выхода', subj: 'Жду Firdaus', body: 'Ассаляму алейкум! Напишите мне, когда Firdaus выйдет в App Store.', share: 'Позвать своих', close: 'Закрыть' };
+    var live = Boolean(C.supabaseUrl && C.supabaseKey && window.fetch);
+    var d = doc.createElement('dialog');
+    d.className = 'sheet';
+    d.setAttribute('aria-labelledby', 'sheet-h');
+    d.innerHTML = '<button class="x" type="button"><span class="sr"></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>' +
+      '<img src="/assets/logo-68.webp" width="56" height="56" alt=""><h3 id="sheet-h"></h3><p></p>' +
+      (live
+        ? '<form class="wl" novalidate><label for="wl-in"></label><input id="wl-in" name="contact" type="email" inputmode="email" autocomplete="email" autocapitalize="off" autocorrect="off" spellcheck="false" maxlength="254" aria-describedby="wl-msg wl-note"><button class="btn" type="submit"></button></form>' +
+          '<p id="wl-msg" class="wl-msg" role="status" aria-live="polite" tabindex="-1"></p><button class="wl-change" type="button" hidden></button>' +
+          '<p id="wl-note" class="wl-note"></p><div class="acts"><button class="btn ghost" type="button" data-share-sheet></button></div>'
+        : '<div class="acts"><a class="btn"></a><button class="btn ghost" type="button" data-share-sheet></button></div><p class="alt" aria-live="polite"></p>');
+    $('h3', d).textContent = T.h;
+    $('p', d).textContent = T.p;
+    $('.x .sr', d).textContent = T.close;
+    if (live) waitlist(C, T, d);
+    else mailFallback(C, T, d);
     var sh = $('[data-share-sheet]', d);
     sh.textContent = T.share;
     sh.addEventListener('click', function () { var m = $('[data-share]'); if (m) m.click(); });
     $('.x', d).addEventListener('click', function () { d.close(); });
-    d.addEventListener('click', function (e) { if (e.target === d) d.close(); });
+    d.addEventListener('click', function (e) {
+      if (e.target !== d) return;
+      /* фон — это клик вне прямоугольника листа; касание в отступ листа не закрывает его и не стирает набранное */
+      var r = d.getBoundingClientRect();
+      if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) d.close();
+    });
     doc.body.appendChild(d);
     btns.forEach(function (a) {
       a.removeAttribute('aria-disabled');

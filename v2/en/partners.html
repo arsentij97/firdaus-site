@@ -62,6 +62,13 @@ window.FIRDAUS = {
      Грузится после загрузки страницы и не мешает скорости. Разбор и
      альтернативы — docs/dela/seo-servisy.md. */
   posthogKey: 'phc_uZvV3CabWBg6WAE5MZpBKMHBtXHfxyuDgQGw5Wk89tFq',
+  /* ЛИСТ ОЖИДАНИЯ (до выхода в App Store): форма «почта или Telegram» зовёт
+     join_waitlist в базе приложения (supabase/migrations/0370). Ключ — тот же
+     публичный, что внутри приложения (mobile/.env, EXPO_PUBLIC_SUPABASE_*):
+     он открыт по замыслу, права держат RLS и функция. Таблица с сайта не
+     читается. Пусто — форма не показывается, остаётся письмо на почту. */
+  supabaseUrl: 'https://axpoadzhfvxzywotbvug.supabase.co',
+  supabaseKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF4cG9hZHpoZnZ4enl3b3RidnVnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODc4NzQxMzksImV4cCI6MjEwMzQ1MDEzOX0.9Fjf93Ev1a0Yybol90CjKhmC5gQZt6QiTKK-6Xj91T8',
 };
 
 (function () {
@@ -142,8 +149,13 @@ window.FIRDAUS = {
     }
   });
 
-  /* аналитика: PostHog без cookie, после загрузки страницы. Заглушка —
-     как в официальном сниппете: очередь _i и вызовы до загрузки библиотеки. */
+  /* аналитика: PostHog без cookie. Библиотека тяжёлая (≈380 КБ, 120 КБ по
+     сети), поэтому грузится не сразу, а после первого касания, прокрутки или
+     клавиши — или когда браузер свободен, ~3 с после загрузки. Первый экран её
+     не ждёт. Заглушка — как в официальном сниппете: очередь _i и вызовы до
+     загрузки библиотеки (posthog.capture из других скриптов не теряется).
+     Просмотр страницы не теряется: ушёл раньше, чем библиотека встала, —
+     $pageview уходит одним маяком (sendBeacon) прямо в PostHog. */
   if (C.posthogKey && location.protocol === 'https:') {
     var ph = window.posthog = [];
     ph.__SV = 1;
@@ -156,17 +168,53 @@ window.FIRDAUS = {
       capture_pageleave: true,
       disable_session_recording: true,
       disable_surveys: true,
+      loaded: function () { phReady = true; },
     }, 'posthog']];
     ph.capture = function () { ph.push(['capture'].concat(Array.prototype.slice.call(arguments))); };
-    window.addEventListener('load', function () {
+    var phReady = false, phAsked = false;
+    var WAKE = ['pointerdown', 'keydown', 'scroll', 'touchstart'];
+    var phLoad = function () {
+      if (phAsked) return;
+      phAsked = true;
+      WAKE.forEach(function (ev) { window.removeEventListener(ev, phLoad, true); });
+      var sc = document.createElement('script');
+      sc.async = true;
+      sc.crossOrigin = 'anonymous';
+      sc.src = 'https://eu-assets.i.posthog.com/static/array.js';
+      document.head.appendChild(sc);
+    };
+    WAKE.forEach(function (ev) { window.addEventListener(ev, phLoad, { capture: true, passive: true }); });
+    var phIdle = function () {
       setTimeout(function () {
-        var sc = document.createElement('script');
-        sc.async = true;
-        sc.crossOrigin = 'anonymous';
-        sc.src = 'https://eu-assets.i.posthog.com/static/array.js';
-        document.head.appendChild(sc);
-      }, 1500);
-    });
+        if (window.requestIdleCallback) window.requestIdleCallback(phLoad, { timeout: 2000 });
+        else phLoad();
+      }, 3000);
+    };
+    if (document.readyState === 'complete') phIdle(); else window.addEventListener('load', phIdle);
+    var beaconSent = false;
+    var phBeacon = function () {
+      if (phReady || beaconSent || !navigator.sendBeacon) return;
+      beaconSent = true;
+      ph._i[0][1].capture_pageview = false; /* библиотека встанет позже (вкладку вернули) — второй просмотр не считать */
+      var id = 'site-' + Date.now().toString(36) + Math.random().toString(36).slice(2, 10);
+      var body = JSON.stringify({
+        api_key: C.posthogKey,
+        event: '$pageview',
+        distinct_id: id,
+        properties: {
+          $current_url: location.href,
+          $pathname: location.pathname,
+          $host: location.host,
+          $referrer: document.referrer || '$direct',
+          $screen_width: screen.width,
+          $lib: 'web-beacon',
+          $process_person_profile: false,
+        },
+      });
+      try { navigator.sendBeacon('https://eu.i.posthog.com/i/v0/e/', new Blob([body], { type: 'text/plain' })); } catch (e) { /* маяк не ушёл — не страшно */ }
+    };
+    window.addEventListener('pagehide', phBeacon);
+    document.addEventListener('visibilitychange', function () { if (document.visibilityState === 'hidden') phBeacon(); });
   }
 })();
 </script>
