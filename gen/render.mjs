@@ -53,6 +53,36 @@ export const PICS = {
   'v2-road': [[720, 1280], [1080, 1920]],
   'v2-lions': [[720, 1280], [1206, 2144]],
   'v2-gate': [[720, 1280], [1080, 1920]],
+  /* Сайт v3 (превью /v3/, 13.11): живая съёмка (Google Flow, одна обработка —
+     README, «Сайт v3») и свет на бархате (docs/brand/fon-*). Блок между
+     метками пишет скрипт обработки, руками не править. */
+  /* v3:start */
+  'v3-beads': [[720, 516], [1080, 773]],
+  'v3-door': [[1280, 714], [2048, 1143]],
+  'v3-door-m': [[720, 900], [1080, 1350]],
+  'v3-night': [[480, 600], [760, 950]],
+  'v3-qibla': [[480, 600], [760, 950]],
+  'v3-quran': [[480, 600], [760, 950]],
+  'v3-shoes': [[1280, 720], [2048, 1152]],
+  'v3-shoes-m': [[720, 900], [1080, 1350]],
+  'v3-sisters': [[1280, 720], [2048, 1152]],
+  'v3-sisters-m': [[720, 900], [1080, 1350]],
+  'v3-slip': [[1280, 800], [2048, 1280]],
+  'v3-slip-m': [[720, 900], [1080, 1350]],
+  'v3-slip2': [[480, 600], [760, 950]],
+  'v3-table': [[1280, 720], [2048, 1152]],
+  'v3-table-en': [[1280, 720], [2048, 1152]],
+  'v3-table-en-m': [[720, 900], [1080, 1350]],
+  'v3-table-m': [[720, 900], [1080, 1350]],
+  'v3-tasbih': [[480, 600], [760, 950]],
+  'v3-tea': [[1280, 714], [2048, 1143]],
+  'v3-teatall': [[720, 938], [1080, 1406]],
+  'v3-velvet': [[1200, 978], [1536, 1252]],
+  'v3-velvet-m': [[720, 938], [1080, 1406]],
+  'v3-walk': [[640, 800], [1120, 1400]],
+  'v3-window': [[1280, 714], [2048, 1143]],
+  'v3-window-m': [[720, 900], [1080, 1350]],
+  /* v3:end */
 };
 
 function picture(attrs) {
@@ -67,8 +97,17 @@ function picture(attrs) {
     return `<picture><source type="image/avif" srcset="${file('avif')}"><img src="${file('webp')}" width="${W}" height="${H}"${rest}></picture>`;
   }
   const sizes = /sizes="([^"]+)"/.exec(rest)?.[1] ?? '100vw';
-  const noSizes = rest.replace(/\s*sizes="[^"]+"/, '');
-  return `<picture><source type="image/avif" srcset="${src('avif')}" sizes="${sizes}"><img src="${file('webp')}" srcset="${src('webp')}" sizes="${sizes}" width="${W}" height="${H}"${noSizes}></picture>`;
+  /* Сайт v3: data-pic-m — свой кадр для телефона (вертикальный), до 760 px. */
+  const m = /\s*data-pic-m="([^"]+)"/.exec(rest);
+  let mobile = '';
+  if (m) {
+    const ms = PICS[m[1]];
+    if (!ms) throw new Error(`нет картинки «${m[1]}» в PICS`);
+    const msrc = (ext) => ms.map(([w]) => `/assets/img/${m[1]}-${w}.${ext} ${w}w`).join(', ');
+    mobile = `<source media="(max-width: 760px)" type="image/avif" srcset="${msrc('avif')}" sizes="100vw"><source media="(max-width: 760px)" type="image/webp" srcset="${msrc('webp')}" sizes="100vw">`;
+  }
+  const noSizes = rest.replace(/\s*sizes="[^"]+"/, '').replace(/\s*data-pic-m="[^"]+"/, '');
+  return `<picture>${mobile}<source type="image/avif" srcset="${src('avif')}" sizes="${sizes}"><img src="${file('webp')}" srcset="${src('webp')}" sizes="${sizes}" width="${W}" height="${H}"${noSizes}></picture>`;
 }
 
 const minCss = (css) => css.replace(/\/\*[\s\S]*?\*\//g, '').replace(/\s*\n\s*/g, '').replace(/\s*([{};,>])\s*/g, '$1');
@@ -81,5 +120,7 @@ export function render(html) {
     .replace('<script src="/assets/site.js"></script>', () => `<script>${asset('site.js')}</script>`)
     .replace('<link rel="stylesheet" href="/assets/v2.css">', () => `<style>${minCss(asset('v2.css'))}</style>`)
     .replace('<script src="/assets/v2.js"></script>', () => `<script>${asset('v2.js')}</script>`)
+    .replace('<link rel="stylesheet" href="/assets/v3.css">', () => `<style>${minCss(asset('v3.css'))}</style>`)
+    .replace('<script src="/assets/v3.js"></script>', () => `<script>${asset('v3.js')}</script>`)
     .replace(/<img((?:\s+[a-z-]+(?:="[^"]*")?)*\s+data-pic="[^"]+"(?:\s+[a-z-]+(?:="[^"]*")?)*)\s*\/?>/g, (_, a) => picture(a));
 }
