@@ -379,7 +379,7 @@ h3{font:650 clamp(20px,1.7vw,24px)/1.25 var(--sans);letter-spacing:-.02em;text-w
 .wl-change{min-height:44px;margin-top:4px;color:var(--moon);font-size:15px;font-weight:600;text-decoration:underline;text-underline-offset:3px}
 .wl-change[hidden]{display:none}
 .sheet .wl-note{margin-top:12px;font-size:13px;line-height:1.5;color:var(--mist-2)}
-.sheet .wl-note a{color:var(--mist);text-underline-offset:2px}
+.sheet .wl-note a{color:var(--mist);text-underline-offset:2px;white-space:nowrap}
 .sheet .wl-note+.acts{margin-top:18px}
 
 /* ── сцена «контраст» по прокрутке: чужие уведомления сыплются, Фокус закрывает — остаётся намаз ── */
