@@ -90,13 +90,23 @@
     d.setAttribute('aria-labelledby', 'sheet-h');
     d.innerHTML = '<button class="x" type="button"><span class="sr"></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>' +
       '<img src="/assets/logo-68.webp" width="56" height="56" alt=""><h3 id="sheet-h"></h3><p></p>' +
-      '<div class="acts"><a class="btn"></a><button class="btn ghost" type="button" data-share-sheet></button></div>';
+      '<div class="acts"><a class="btn"></a><button class="btn ghost" type="button" data-share-sheet></button></div><p class="alt" aria-live="polite"></p>';
     $('h3', d).textContent = T.h;
     $('p', d).textContent = T.p;
     $('.x .sr', d).textContent = T.close;
     var mail = $('a.btn', d);
     mail.textContent = T.mail;
     mail.href = 'mailto:' + (C.email || 'support@firdaus.life') + '?subject=' + encodeURIComponent(T.subj) + '&body=' + encodeURIComponent(T.body);
+    var alt = $('.alt', d);
+    var addr = C.email || 'support@firdaus.life';
+    mail.addEventListener('click', function () {
+      /* почта на телефоне может быть не настроена — адрес сразу в буфер и на экран */
+      if (navigator.clipboard) navigator.clipboard.writeText(addr).catch(function () {});
+      alt.innerHTML = '';
+      alt.appendChild(doc.createTextNode(lang === 'en' ? 'If your mail app didn’t open, write to ' : 'Если почта не открылась — напиши на '));
+      var b = doc.createElement('b'); b.textContent = addr; alt.appendChild(b);
+      alt.appendChild(doc.createTextNode(lang === 'en' ? ' (address copied).' : ' (адрес скопирован).'));
+    });
     var sh = $('[data-share-sheet]', d);
     sh.textContent = T.share;
     sh.addEventListener('click', function () { var m = $('[data-share]'); if (m) m.click(); });

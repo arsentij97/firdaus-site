@@ -63,7 +63,7 @@ h3{font:650 clamp(20px,1.7vw,24px)/1.25 var(--sans);letter-spacing:-.02em;text-w
 
 /* ── шапка: высота одна с первого кадра, меняется только фон — ничего не прыгает ── */
 .top{position:fixed;inset:0 0 auto;z-index:50;height:64px;padding-top:env(safe-area-inset-top);transition:background-color .35s,box-shadow .35s}
-.top::before{content:"";position:absolute;inset:0;background:rgba(11,16,14,.9);-webkit-backdrop-filter:saturate(1.4) blur(18px);backdrop-filter:saturate(1.4) blur(18px);opacity:0;transition:opacity .35s;pointer-events:none}
+.top::before{content:"";position:absolute;inset:0;background:rgba(11,16,14,.96);-webkit-backdrop-filter:saturate(1.4) blur(18px);backdrop-filter:saturate(1.4) blur(18px);opacity:0;transition:opacity .35s;pointer-events:none}
 .top.scrolled::before{opacity:1}
 .top.scrolled{box-shadow:0 1px 0 var(--line)}
 .top .wrap{position:relative;display:flex;align-items:center;gap:22px;height:64px}
@@ -149,14 +149,14 @@ h3{font:650 clamp(20px,1.7vw,24px)/1.25 var(--sans);letter-spacing:-.02em;text-w
 .contrast .body{margin-top:26px}
 .stage{position:relative;margin-top:clamp(48px,7vw,88px)}
 .stage .ph{border-radius:var(--r);aspect-ratio:16/10}
-.stage .phone{position:absolute;width:clamp(170px,22vw,290px);left:clamp(16px,6vw,90px);bottom:clamp(-90px,-6vw,-40px)}
+.stage .phone{position:absolute;width:clamp(170px,22vw,290px);left:44%;bottom:clamp(-90px,-6vw,-40px)}
 .stage-cap{display:flex;flex-wrap:wrap;gap:10px;margin-top:110px}
-@media (min-width:761px){.stage-cap{justify-content:flex-end;margin-top:26px;margin-left:auto;max-width:60%}}
+@media (min-width:761px){.stage-cap{margin-top:26px;max-width:40%}}
 .pill{display:inline-flex;align-items:center;gap:8px;min-height:36px;padding:0 14px;border-radius:999px;background:var(--card);box-shadow:inset 0 0 0 1px var(--line);font-size:14px;color:var(--mist)}
 .pill svg{width:16px;height:16px;color:var(--emerald)}
 @media (max-width:760px){
   .stage .ph{aspect-ratio:4/5}
-  .stage .phone{width:46%;left:7%;bottom:-70px}
+  .stage .phone{width:46%;left:12%;bottom:-70px}
 }
 
 /* ── пять опор: оглавление ── */
@@ -169,7 +169,7 @@ h3{font:650 clamp(20px,1.7vw,24px)/1.25 var(--sans);letter-spacing:-.02em;text-w
 @media (max-width:900px){.toc{grid-template-columns:1fr}.toc a{flex-direction:row;align-items:baseline;gap:14px;padding:18px 4px}.toc b{font-size:22px;min-width:5.4em}.toc span:last-child{font-size:14px}}
 
 /* ── опора ── */
-.pillar{position:relative;padding-bottom:clamp(96px,12vw,170px)}
+.pillar{position:relative;padding-bottom:clamp(72px,8vw,120px)}
 .op{position:relative;height:min(86svh,820px);min-height:520px}
 .op .ph{position:absolute;inset:0}
 .op .ph img{transform:scale(var(--z,1.08));transition:transform .2s linear;will-change:transform}
@@ -356,6 +356,8 @@ h3{font:650 clamp(20px,1.7vw,24px)/1.25 var(--sans);letter-spacing:-.02em;text-w
 .sheet h3{margin-top:18px;font-size:24px}
 .sheet p{margin-top:10px;color:var(--mist);line-height:1.55}
 .sheet .acts{margin-top:24px;flex-direction:column;align-items:stretch}
+.sheet .alt{margin-top:14px;font-size:14px;color:var(--mist);min-height:20px}
+.sheet .alt b{color:var(--paper);font-weight:600}
 .sheet .x{position:absolute;top:14px;right:14px;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;color:var(--mist)}
 .sheet .x svg{width:20px;height:20px}
 @media (min-width:761px){.sheet{margin:auto;border-radius:28px}}
