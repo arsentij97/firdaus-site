@@ -8,7 +8,7 @@
    3. Манифест: слова суры Аль-Аср зажигаются по мере прокрутки.
    4. «Намаз»: время на сегодня, кибла, последняя треть ночи — та же
       библиотека, что в приложении и на страницах городов (adhan + namaz.js);
-      тасбих считается касанием.
+      кибла на карточке — настоящий экран: «повернись» → совпало.
    5. Лента сцен: кнопки «назад/вперёд», лёгкое приближение фото опор.
    6. «Позови своих»: системное «Поделиться», иначе — ссылка в буфер.
 
@@ -64,12 +64,11 @@
   doc.addEventListener('DOMContentLoaded', function () {
     header();
     reveal();
-    tasbih();
     share();
     soon();
     namaz();
     /* остальное — когда страница уже нарисована: первый экран не ждёт */
-    var later = function () { stack(); lit(); rails(); zoom(); scene(); };
+    var later = function () { stack(); lit(); rails(); zoom(); scene(); qibla(); };
     var idle = window.requestIdleCallback || function (f) { setTimeout(f, 300); };
     if (doc.readyState === 'complete') idle(later); else window.addEventListener('load', function () { idle(later); });
   });
@@ -370,24 +369,20 @@
     draw();
   }
 
-  /* ── тасбих касанием ── */
-  function tasbih() {
-    var b = $('.tasbih');
-    if (!b) return;
-    var fg = $('.fg', b), c = $('.c', b), lbl = $('[data-dhikr]', b);
-    var LEN = 2 * Math.PI * 19;
-    var SEQ = lang === 'en'
-      ? ['SubhanAllah', 'Alhamdulillah', 'Allahu Akbar']
-      : ['СубханАллах', 'Альхамдулиллях', 'Аллаху Акбар'];
-    var n = 0, k = 0;
-    fg.style.strokeDasharray = LEN;
-    fg.style.strokeDashoffset = LEN;
-    b.addEventListener('click', function () {
-      n += 1;
-      if (n > 33) { n = 1; k = (k + 1) % SEQ.length; lbl.textContent = SEQ[k]; }
-      c.textContent = n;
-      fg.style.strokeDashoffset = LEN * (1 - n / 33);
-      if (navigator.vibrate) navigator.vibrate(n === 33 ? 30 : 6);
+  /* ── кибла на карточке «Один день»: экран «повернись вправо» сменяется
+     «Ты смотришь на киблу», кольцо рамки загорается — как совпадение в руке.
+     Повторяется, когда карточка снова входит в кадр. ── */
+  function qibla() {
+    $$('.qb').forEach(function (p) {
+      if (still || !('IntersectionObserver' in window)) { p.classList.add('on'); return; }
+      var t = null;
+      new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          clearTimeout(t);
+          if (e.isIntersecting) t = setTimeout(function () { p.classList.add('on'); }, 1100);
+          else p.classList.remove('on');
+        });
+      }, { threshold: 0.7 }).observe(p);
     });
   }
 
@@ -447,7 +442,6 @@
     var night = new Date(t.maghrib.getTime() + (t2.fajr - t.maghrib) * 2 / 3);
     $$('[data-night]').forEach(function (n) { n.textContent = N.hm(night, city.tz); });
     var q = N.qibla(city);
-    $$('[data-needle]').forEach(function (n) { n.style.transform = 'rotate(' + q.toFixed(1) + 'deg)'; });
     $$('[data-qibla]').forEach(function (n) { n.textContent = Math.round(q) + '°'; });
 
     var left = $$('[data-left]'), leftl = $$('[data-leftl]'), heroName = $$('[data-next-name]');

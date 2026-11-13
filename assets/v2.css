@@ -298,7 +298,7 @@ h3{font:650 clamp(20px,1.6vw,22px)/1.25 var(--sans);letter-spacing:-.02em}
 @media (max-width:900px){.promo{grid-template-columns:1fr}.promo .pic{height:340px;order:-1}.promo .pic::after{background:linear-gradient(0deg,var(--card),transparent 50%)}}
 
 /* 11. Вопросы */
-.faq-sec{padding:clamp(90px,12vw,150px) 0}
+.faq-sec{padding:clamp(60px,9vw,150px) 0}
 .faq{border-top:1px solid var(--line)}
 @media (min-width:1000px){.faq-sec .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:start}.faq-sec .sec-top{position:sticky;top:110px;margin:0}}
 .q{border-bottom:1px solid var(--line)}
@@ -408,8 +408,8 @@ input[type=range]::-moz-range-thumb{width:26px;height:26px;border:0;border-radiu
 @media (max-width:900px){.apply{grid-template-columns:1fr;gap:36px}}
 @media (max-width:560px){.form .two{grid-template-columns:1fr}}
 
-.sec{padding:clamp(80px,10vw,140px) 0}
-.sec-top{margin-bottom:52px}
+.sec{padding:clamp(60px,8.5vw,140px) 0}
+.sec-top{margin-bottom:clamp(32px,4vw,52px)}
 .sec-top h2{margin-top:18px;max-width:13em}
 .sec-top .body{margin-top:20px}
 
