@@ -69,7 +69,7 @@
     soon();
     namaz();
     /* остальное — когда страница уже нарисована: первый экран не ждёт */
-    var later = function () { stack(); lit(); rails(); zoom(); };
+    var later = function () { stack(); lit(); rails(); zoom(); scene(); };
     var idle = window.requestIdleCallback || function (f) { setTimeout(f, 300); };
     if (doc.readyState === 'complete') idle(later); else window.addEventListener('load', function () { idle(later); });
   });
@@ -122,6 +122,43 @@
       a.addEventListener('click', open);
       a.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') open(e); });
     });
+  }
+
+
+  /* ── сцена «контраст»: чем дальше листаешь, тем больше чужих уведомлений;
+     дальше Фокус закрывает приложения — шум разлетается, остаётся «Идёт Аср» ── */
+  function scene() {
+    var sc = $('.ct-scene');
+    if (!sc) return;
+    var stage = $('.stage', sc), scr = $('.phone .scr', sc), pill = $('.lockpill', sc);
+    var ns = $$('.noise', sc);
+    var DIR = [[-1, -0.7], [1, -0.4], [-1, 0.5], [1, 0.8]];
+    var cl = function (x) { return x < 0 ? 0 : x > 1 ? 1 : x; };
+    function draw(p) {
+      var out = cl((p - 0.56) / 0.16);
+      ns.forEach(function (n, i) {
+        var inn = cl((p - 0.06 - i * 0.1) / 0.08);
+        var d = DIR[i];
+        n.style.opacity = (inn * (1 - out)).toFixed(3);
+        n.style.transform = 'translate(' + (d[0] * out * 180).toFixed(1) + 'px,' + (d[1] * out * 140 + (1 - inn) * 18).toFixed(1) + 'px) rotate(' + (d[0] * out * 9).toFixed(2) + 'deg) scale(' + (0.95 + 0.05 * inn).toFixed(3) + ')';
+      });
+      var dim = p < 0.56 ? 0.38 * cl(p / 0.5) : 0.38 - 0.3 * out;
+      stage.style.setProperty('--d', dim.toFixed(3));
+      if (scr) scr.style.setProperty('--sd', (0.6 * (1 - out)).toFixed(3));
+      if (pill) { var q = cl((p - 0.7) / 0.1); pill.style.opacity = q.toFixed(3); pill.style.transform = 'translate(-50%,' + ((1 - q) * 8).toFixed(1) + 'px)'; }
+    }
+    if (still) { draw(1); return; }
+    var ticking = false;
+    function upd() {
+      ticking = false;
+      var r = sc.getBoundingClientRect();
+      var vh = window.innerHeight;
+      if (r.bottom < 0 || r.top > vh) return;
+      draw(cl(-r.top / Math.max(1, r.height - (vh - 64))));
+    }
+    window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(upd); } }, { passive: true });
+    window.addEventListener('resize', upd);
+    upd();
   }
 
   /* ── 1. шапка ── */
