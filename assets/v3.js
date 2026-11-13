@@ -135,9 +135,9 @@
     var DIR = [[-1, -0.7], [1, -0.4], [-1, 0.5], [1, 0.8]];
     var cl = function (x) { return x < 0 ? 0 : x > 1 ? 1 : x; };
     function draw(p) {
-      var out = cl((p - 0.56) / 0.16);
+      var out = cl((p - 0.56) / 0.1);
       ns.forEach(function (n, i) {
-        var inn = cl((p - 0.06 - i * 0.1) / 0.08);
+        var inn = cl((p - 0.06 - i * 0.1) / 0.035);
         var d = DIR[i];
         n.style.opacity = (inn * (1 - out)).toFixed(3);
         n.style.transform = 'translate(' + (d[0] * out * 180).toFixed(1) + 'px,' + (d[1] * out * 140 + (1 - inn) * 18).toFixed(1) + 'px) rotate(' + (d[0] * out * 9).toFixed(2) + 'deg) scale(' + (0.95 + 0.05 * inn).toFixed(3) + ')';
