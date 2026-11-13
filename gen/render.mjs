@@ -30,6 +30,29 @@ export const PICS = {
   'st-dua': [[220, 220]],
   'st-krutoj': [[220, 220]],
   'st-alhamdulillah': [[220, 220]],
+  /* Сайт v2 (превью /v2/, 13.11): экраны из кадров App Store
+     (docs/shots/appstore/<язык>/69, вырезан экран 954×2073) и картины в
+     родном размере. Пересобрать — README, раздел «Сайт v2». */
+  'v2-ru-01': [[480, 1043], [954, 2073]],
+  'v2-ru-02': [[480, 1043], [954, 2073]],
+  'v2-ru-04': [[480, 1043], [954, 2073]],
+  'v2-ru-05': [[480, 1043], [954, 2073]],
+  'v2-ru-06': [[480, 1043], [954, 2073]],
+  'v2-ru-07': [[480, 1043], [954, 2073]],
+  'v2-ru-08': [[480, 1043], [954, 2073]],
+  'v2-en-01': [[480, 1043], [954, 2073]],
+  'v2-en-02': [[480, 1043], [954, 2073]],
+  'v2-en-04': [[480, 1043], [954, 2073]],
+  'v2-en-05': [[480, 1043], [954, 2073]],
+  'v2-en-06': [[480, 1043], [954, 2073]],
+  'v2-en-07': [[480, 1043], [954, 2073]],
+  'v2-en-08': [[480, 1043], [954, 2073]],
+  'v2-plus': [[720, 1281], [877, 1560]],
+  'v2-dawn': [[720, 1280], [1206, 2144]],
+  'v2-moon': [[720, 1290], [1080, 1935]],
+  'v2-road': [[720, 1280], [1080, 1920]],
+  'v2-lions': [[720, 1280], [1206, 2144]],
+  'v2-gate': [[720, 1280], [1080, 1920]],
 };
 
 function picture(attrs) {
@@ -56,5 +79,7 @@ export function render(html) {
     .replace('<link rel="stylesheet" href="/assets/site.css">', () => `<style>${minCss(asset('site.css'))}</style>`)
     .replace('<link rel="stylesheet" href="/assets/namaz.css">', () => `<style>${minCss(asset('namaz.css'))}</style>`)
     .replace('<script src="/assets/site.js"></script>', () => `<script>${asset('site.js')}</script>`)
+    .replace('<link rel="stylesheet" href="/assets/v2.css">', () => `<style>${minCss(asset('v2.css'))}</style>`)
+    .replace('<script src="/assets/v2.js"></script>', () => `<script>${asset('v2.js')}</script>`)
     .replace(/<img((?:\s+[a-z-]+(?:="[^"]*")?)*\s+data-pic="[^"]+"(?:\s+[a-z-]+(?:="[^"]*")?)*)\s*\/?>/g, (_, a) => picture(a));
 }
