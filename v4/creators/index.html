@@ -604,6 +604,7 @@ window.FIRDAUS = {
 */
 (function () {
   var C = window.FIRDAUS || {};
+  var T0 = Date.now();
   var D;
   try { D = JSON.parse(document.getElementById('cr-data').textContent); } catch (e) { return; }
   var ROLES = ['reciter', 'imam', 'hafiz', 'ustaz', 'mosque', 'creator', 'public'];
@@ -1075,8 +1076,12 @@ window.FIRDAUS = {
       $$('[data-cr-join-h],[data-cr-join-lead]').forEach(function (el) { el.textContent = el.getAttribute('data-live'); });
       return;
     }
-    var opened = 0, btn = $('button[type=submit]', f), fail = $('[data-cr-fail]', f);
-    f.addEventListener('focusin', function () { if (!opened) { opened = Date.now(); hit('form_start'); } });
+    /* Время на странице до отправки — ловушка для ботов (сервер ждёт не меньше 2,5 с). Считаем от открытия
+       страницы, а не от первого касания поля: имя и ник могут быть уже подставлены из ссылки. */
+    var started = false, btn = $('button[type=submit]', f), fail = $('[data-cr-fail]', f);
+    var begin = function () { if (!started) { started = true; hit('form_start'); } };
+    f.addEventListener('focusin', begin);
+    f.addEventListener('input', begin);
     var sel = $('#f-role');
     if (sel) sel.addEventListener('change', function () { sel.dataset.touched = '1'; if (ROLES.indexOf(sel.value) >= 0) { role = sel.value; applyRole(); } });
     var nameIn = $('#f-name');
@@ -1100,7 +1105,8 @@ window.FIRDAUS = {
       body.role = f.elements.role.value;
       body.contact = v('contact');
       body.website = f.elements.website.value;
-      body.elapsed = opened ? Date.now() - opened : 0;
+      body.elapsed = Date.now() - T0;
+      begin();
       body.source = location.search.slice(0, 300);
       btn.disabled = true;
       btn.textContent = D.f.sending;
