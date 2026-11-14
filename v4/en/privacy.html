@@ -297,10 +297,15 @@ window.FIRDAUS = {
 <tr><td>“If you can’t pay” letter</td><td data-l="Why">To choose whom to give a subscription to</td><td data-l="Details">Your story and your wish, if you wrote them. Only the Firdaus team reads it, and the letter is never published. It is deleted with your account or when you ask.</td></tr>
 <tr><td>Notifications</td><td data-l="Why">To send push notifications</td><td data-l="Details">Your device’s notification address (token) and a technical delivery log; which notifications you turned off, your phone’s time zone and the time of the evening digest. If “Show message text” is on, a notification about a personal message shows its first words; turn it off and you see only the name and “New message”.</td></tr>
 <tr><td>Reports</td><td data-l="Why">To look into them</td><td data-l="Details">What you reported and why; reports about you; warnings and restrictions applied to you (for example, a ban on uploading videos) and your appeals. The reported content (including a photo or message from a chat) is seen by our moderation team in a private Telegram work chat, only to decide on it. Support requests (text, screenshots, app version and phone model) go there too.</td></tr>
+<tr><td>Status application</td><td data-l="Why">To give a gold check or accept you into the Creator Program</td><td data-l="Details">If you apply in the app: which status you ask for, links to your social media pages (up to five), a confirmation code like FIRDAUS-XXXXXX that you put in your page’s bio, and a few words about yourself if you wrote them. For creators, also your follower count, a contact and what you film. If you came through an invitation link from the team, its tag. The application and the decision on it are seen by the Firdaus team, including in the private Telegram work chat where the decision is made.</td></tr>
 </tbody>
 </table>
 
   <p id="waitlist"><strong>Website waitlist.</strong> Before the app is out, you can leave your email or Telegram username on firdaus.life to hear about the launch. No account is needed. We keep only that contact, the page language and where you came from (a link tag, such as an ad’s, or the page address) — in the same Supabase database, closed to outsiders. Why: to tell you once that Firdaus is on the App Store. No newsletters, no ads, and we don’t share the contact with anyone. We delete all waitlist contacts 30 days after launch. To remove yours sooner, write to <a href="mailto:support@firdaus.life" data-link="email"><span data-text="email">support@firdaus.life</span></a>.</p>
+
+  <p id="creators"><strong>Creator applications on the website.</strong> On firdaus.life/creators a creator can hold a place before launch, without an account. We keep what you wrote in the form: your name, your Instagram or TikTok handle, what you do and how to reach you. Along with the application we keep the page language and the tags of the link you came through: the invitation tag (ref), campaign tags (utm) and the link address itself (in a personal invitation it may contain your name and handle). Why: to contact you and decide on the application. Where: in the Supabase database (EU), closed to outsiders. Who sees it: the Firdaus team; a copy of the application goes to the team’s private Telegram work chat. We pass it to no one else. We keep it until the application is decided and for 12 months after that; to delete it sooner, write to <a href="mailto:support@firdaus.life" data-link="email"><span data-text="email">support@firdaus.life</span></a>.</p>
+
+  <p id="site-visits"><strong>Visit counting on the creators page.</strong> To see which invitations work, the page records three steps: opened the page, started the form, made a story card. Each record carries the page language and address, the link tags (ref, utm), the chosen status, whether the invitation was personal, and a random tab number that lives only in that tab and is erased when it is closed. There is no name, handle or contact in it, and no cookies. The IP address is not written to the database: the server keeps it only in memory to limit how many applications come from one address. Separately, the whole website counts page views in PostHog (EU), also without cookies and without storing anything on your device.</p>
 
   <h3 id="messages">Your messages</h3>
   <ul>
@@ -320,6 +325,7 @@ window.FIRDAUS = {
     <li><strong>Where the video is kept.</strong> The video file is stored and delivered by the video service Bunny (bunny.net). The caption, comments and likes are in the main database.</li>
     <li><strong>What the “For you” feed uses.</strong> The topics you picked, who you follow and how you watched: finished, skipped, marked “not interested”. We do not keep a stream of individual events — one summary row per video remains.</li>
     <li><strong>Reports, warnings, appeals.</strong> You can report a video or a comment. If your video is taken down, you get a warning with the reason; the decision can be appealed (see the <a href="/v4/en/terms#reminders">Terms</a>).</li>
+    <li><strong>Creator studio.</strong> A creator sees only totals for their own videos: views, completions, average watch time, likes, comments, saves, reposts, new followers, and which feeds and languages the views came from. Those last two breakdowns appear only once a video has at least five viewers, so they cannot point to a person. We never show a creator who exactly watched.</li>
     <li><strong>Deletion.</strong> You can delete your own video at any time.</li>
   </ul>
 
@@ -328,6 +334,9 @@ window.FIRDAUS = {
 
   <h3 id="wali">Wali and message requests</h3>
   <p>If a sister has invited a wali, he sees the requests from men who want to write to her: the author’s profile and his note. He does not see her chats, posts or prayers. Only she can remove her wali.</p>
+
+  <h3 id="ban">If an account is banned</h3>
+  <p>For serious violations, such as getting around the protection of sisters, an account is banned for good. So that the violator cannot come back with a new account, with such a ban we keep the Apple or Google sign-in identifier of that account: a new account with the same sign-in is banned at once. We also plan to turn on a device flag through Apple DeviceCheck: Apple stores two bits (“yes” or “no”) for our app on each iPhone, and we do not receive any device identifier. This flag is not active yet; when we turn it on, we will update this page.</p>
 
   <h2 id="why">4. Why we need it</h2>
   <ul>
@@ -354,7 +363,7 @@ window.FIRDAUS = {
 <tr><td>PostHog</td><td data-l="What it does">Usage statistics, servers in the EU</td><td data-l="What it receives">The events from section 4, an account identifier, phone model and iOS version. Location by IP is switched off. Never: coordinates, city, prayer times, cycle calendar.</td></tr>
 <tr><td>Sentry</td><td data-l="What it does">Crash reports</td><td data-l="What it receives">What broke and where in the code, phone model, iOS and app version. No name, email or content of your posts.</td></tr>
 <tr><td>LiveKit</td><td data-l="What it does">Live audio for “Stage” and calls, once they arrive</td><td data-l="What it receives">The audio and video of a conversation while it is happening, and an account identifier to connect the people talking. Conversations are not recorded or stored.</td></tr>
-<tr><td>Telegram</td><td data-l="What it does">The team’s private work chat</td><td data-l="What it receives">Reports with the reported content, and support requests (see “Reports” in section 3).</td></tr>
+<tr><td>Telegram</td><td data-l="What it does">The team’s private work chat</td><td data-l="What it receives">Reports with the reported content, support requests, status and Creator Program applications, creator applications from the website (details in section 3).</td></tr>
 </tbody>
 </table>
   <p><strong>Firdaus partners</strong> (creators whose code you entered) never receive your name, your messages or your prayer marks from us. We only tell them how many people came with their code and how many payments there were, so we can calculate their share.</p>
@@ -367,6 +376,7 @@ window.FIRDAUS = {
     <li><strong>Loved ones and your circle:</strong> whether you have prayed the current prayer, your streak and missed prayers — unless you hid them in privacy settings; when you were last online.</li>
     <li><strong>The person you chat with:</strong> the messages you sent them.</li>
     <li><strong>A sister’s wali:</strong> the requests from men who want to write to her — and nothing else.</li>
+    <li><strong>A creator whose video you watched:</strong> only totals for the video; they do not see you personally.</li>
     <li><strong>No one:</strong> your cycle calendar, prayer check photos, your coordinates.</li>
   </ul>
   <p>The app does not fill in a city on your profile and does not show one to others.</p>
@@ -382,6 +392,9 @@ window.FIRDAUS = {
     <li><strong>Crash reports</strong> — up to 90 days.</li>
     <li><strong>Usage events</strong> — up to 12 months.</li>
     <li><strong>Website waitlist contacts</strong> — up to 30 days after the app launches.</li>
+    <li><strong>Creator applications from the website</strong> — until decided and for 12 months after; deleted sooner on request.</li>
+    <li><strong>Visit records of the creators page</strong> — up to 12 months.</li>
+    <li><strong>The sign-in identifier of a banned account</strong> — for as long as the ban lasts.</li>
     <li><strong>Reports and decisions on them</strong> — for as long as needed to resolve them and keep offenders out.</li>
     <li><strong>Purchase records</strong> — for as long as accounting and tax law requires.</li>
   </ul>
