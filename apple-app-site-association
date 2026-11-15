@@ -4,9 +4,11 @@
       {
         "appIDs": ["C8V47JYG42.kz.arsen.firdaus"],
         "components": [
-          { "/": "/r/*", "comment": "Remind card" },
+          { "/": "/r/*", "comment": "Reminders video" },
           { "/": "/join/*", "comment": "Invitation to loved ones" },
-          { "/": "/together/*", "comment": "Invitation to pray together" }
+          { "/": "/together/*", "comment": "Invitation to pray together" },
+          { "/": "/creators/apply*", "comment": "Verification and Creator Program application" },
+          { "/": "/u/*", "comment": "Profile link" }
         ]
       }
     ]

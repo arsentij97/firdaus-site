@@ -33,6 +33,22 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://firdaus.life/en/partners"/>
   </url>
   <url>
+    <loc>https://firdaus.life/creators/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/creators/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://firdaus.life/en/creators/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://firdaus.life/en/creators/"/>
+  </url>
+  <url>
+    <loc>https://firdaus.life/en/creators/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/creators/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://firdaus.life/en/creators/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://firdaus.life/en/creators/"/>
+  </url>
+  <url>
     <loc>https://firdaus.life/support</loc>
     <lastmod>2026-11-13</lastmod>
     <priority>0.6</priority>
@@ -100,7 +116,7 @@
 <!-- gen:start -->
   <url>
     <loc>https://firdaus.life/namaz/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/"/>
@@ -109,7 +125,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/"/>
@@ -118,7 +134,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/"/>
@@ -127,7 +143,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/"/>
@@ -136,7 +152,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/almaty</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/almaty"/>
@@ -145,7 +161,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/almaty</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/almaty"/>
@@ -154,7 +170,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/almaty</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/almaty"/>
@@ -163,7 +179,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/almaty</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/almaty"/>
@@ -172,7 +188,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/astana</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/astana"/>
@@ -181,7 +197,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/astana</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/astana"/>
@@ -190,7 +206,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/astana</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/astana"/>
@@ -199,7 +215,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/astana</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/astana"/>
@@ -208,7 +224,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/shymkent</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/shymkent"/>
@@ -217,7 +233,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/shymkent</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/shymkent"/>
@@ -226,7 +242,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/shymkent</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/shymkent"/>
@@ -235,7 +251,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/shymkent</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/shymkent"/>
@@ -244,7 +260,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/aktobe</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/aktobe"/>
@@ -253,7 +269,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/aktobe</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/aktobe"/>
@@ -262,7 +278,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/aktobe</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/aktobe"/>
@@ -271,7 +287,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/aktobe</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/aktobe"/>
@@ -280,7 +296,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/karaganda</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/karaganda"/>
@@ -289,7 +305,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/karaganda</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/karaganda"/>
@@ -298,7 +314,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/karaganda</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/karaganda"/>
@@ -307,7 +323,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/karaganda</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/karaganda"/>
@@ -316,7 +332,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/taraz</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/taraz"/>
@@ -325,7 +341,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/taraz</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/taraz"/>
@@ -334,7 +350,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/taraz</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/taraz"/>
@@ -343,7 +359,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/taraz</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/taraz"/>
@@ -352,7 +368,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/ust-kamenogorsk</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/ust-kamenogorsk"/>
@@ -361,7 +377,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/ust-kamenogorsk</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/ust-kamenogorsk"/>
@@ -370,7 +386,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/ust-kamenogorsk</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/ust-kamenogorsk"/>
@@ -379,7 +395,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/ust-kamenogorsk</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/ust-kamenogorsk"/>
@@ -388,7 +404,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/pavlodar</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/pavlodar"/>
@@ -397,7 +413,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/pavlodar</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/pavlodar"/>
@@ -406,7 +422,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/pavlodar</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/pavlodar"/>
@@ -415,7 +431,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/pavlodar</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/pavlodar"/>
@@ -424,7 +440,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/atyrau</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/atyrau"/>
@@ -433,7 +449,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/atyrau</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/atyrau"/>
@@ -442,7 +458,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/atyrau</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/atyrau"/>
@@ -451,7 +467,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/atyrau</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/atyrau"/>
@@ -460,7 +476,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/semey</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/semey"/>
@@ -469,7 +485,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/semey</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/semey"/>
@@ -478,7 +494,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/semey</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/semey"/>
@@ -487,7 +503,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/semey</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/semey"/>
@@ -496,7 +512,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/kyzylorda</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/kyzylorda"/>
@@ -505,7 +521,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/kyzylorda</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/kyzylorda"/>
@@ -514,7 +530,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/kyzylorda</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/kyzylorda"/>
@@ -523,7 +539,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/kyzylorda</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/kyzylorda"/>
@@ -532,7 +548,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/kostanay</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/kostanay"/>
@@ -541,7 +557,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/kostanay</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/kostanay"/>
@@ -550,7 +566,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/kostanay</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/kostanay"/>
@@ -559,7 +575,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/kostanay</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/kostanay"/>
@@ -568,7 +584,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/uralsk</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/uralsk"/>
@@ -577,7 +593,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/uralsk</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/uralsk"/>
@@ -586,7 +602,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/uralsk</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/uralsk"/>
@@ -595,7 +611,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/uralsk</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/uralsk"/>
@@ -604,7 +620,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/petropavlovsk</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/petropavlovsk"/>
@@ -613,7 +629,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/petropavlovsk</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/petropavlovsk"/>
@@ -622,7 +638,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/petropavlovsk</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/petropavlovsk"/>
@@ -631,7 +647,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/petropavlovsk</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/petropavlovsk"/>
@@ -640,7 +656,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/aktau</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/aktau"/>
@@ -649,7 +665,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/aktau</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/aktau"/>
@@ -658,7 +674,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/aktau</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/aktau"/>
@@ -667,7 +683,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/aktau</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/aktau"/>
@@ -676,7 +692,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/turkestan</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/turkestan"/>
@@ -685,7 +701,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/turkestan</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/turkestan"/>
@@ -694,7 +710,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/turkestan</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/turkestan"/>
@@ -703,7 +719,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/turkestan</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/turkestan"/>
@@ -712,7 +728,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/kokshetau</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/kokshetau"/>
@@ -721,7 +737,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/kokshetau</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/kokshetau"/>
@@ -730,7 +746,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/kokshetau</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/kokshetau"/>
@@ -739,7 +755,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/kokshetau</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/kokshetau"/>
@@ -748,7 +764,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/taldykorgan</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/taldykorgan"/>
@@ -757,7 +773,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/taldykorgan</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/taldykorgan"/>
@@ -766,7 +782,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/taldykorgan</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/taldykorgan"/>
@@ -775,7 +791,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/taldykorgan</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/taldykorgan"/>
@@ -784,7 +800,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/konaev</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/konaev"/>
@@ -793,7 +809,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/konaev</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/konaev"/>
@@ -802,7 +818,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/konaev</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/konaev"/>
@@ -811,7 +827,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/konaev</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/konaev"/>
@@ -820,7 +836,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/zhezkazgan</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/zhezkazgan"/>
@@ -829,7 +845,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/zhezkazgan</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/zhezkazgan"/>
@@ -838,7 +854,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/zhezkazgan</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/zhezkazgan"/>
@@ -847,7 +863,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/zhezkazgan</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/zhezkazgan"/>
@@ -856,7 +872,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/temirtau</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/temirtau"/>
@@ -865,7 +881,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/temirtau</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/temirtau"/>
@@ -874,7 +890,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/temirtau</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/temirtau"/>
@@ -883,7 +899,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/temirtau</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/temirtau"/>
@@ -892,7 +908,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/ekibastuz</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/ekibastuz"/>
@@ -901,7 +917,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/ekibastuz</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/ekibastuz"/>
@@ -910,7 +926,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/ekibastuz</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/ekibastuz"/>
@@ -919,7 +935,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/ekibastuz</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/ekibastuz"/>
@@ -928,7 +944,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/rudny</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/rudny"/>
@@ -937,7 +953,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/rudny</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/rudny"/>
@@ -946,7 +962,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/rudny</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/rudny"/>
@@ -955,7 +971,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/rudny</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/rudny"/>
@@ -964,7 +980,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/zhanaozen</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/zhanaozen"/>
@@ -973,7 +989,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/zhanaozen</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/zhanaozen"/>
@@ -982,7 +998,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/zhanaozen</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/zhanaozen"/>
@@ -991,7 +1007,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/zhanaozen</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/zhanaozen"/>
@@ -1000,7 +1016,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/kaskelen</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/kaskelen"/>
@@ -1009,7 +1025,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/kaskelen</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/kaskelen"/>
@@ -1018,7 +1034,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/kaskelen</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/kaskelen"/>
@@ -1027,7 +1043,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/kaskelen</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/kaskelen"/>
@@ -1036,7 +1052,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/balkhash</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/balkhash"/>
@@ -1045,7 +1061,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/balkhash</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/balkhash"/>
@@ -1054,7 +1070,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/balkhash</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/balkhash"/>
@@ -1063,7 +1079,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/balkhash</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/balkhash"/>
@@ -1072,7 +1088,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/kentau</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/kentau"/>
@@ -1081,7 +1097,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/kentau</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/kentau"/>
@@ -1090,7 +1106,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/kentau</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/kentau"/>
@@ -1099,7 +1115,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/kentau</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/kentau"/>
@@ -1108,7 +1124,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/kulsary</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/kulsary"/>
@@ -1117,7 +1133,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/kulsary</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/kulsary"/>
@@ -1126,7 +1142,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/kulsary</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/kulsary"/>
@@ -1135,7 +1151,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/kulsary</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/kulsary"/>
@@ -1144,7 +1160,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/satpayev</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/satpayev"/>
@@ -1153,7 +1169,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/satpayev</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/satpayev"/>
@@ -1162,7 +1178,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/satpayev</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/satpayev"/>
@@ -1171,7 +1187,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/satpayev</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/satpayev"/>
@@ -1180,7 +1196,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/talgar</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/talgar"/>
@@ -1189,7 +1205,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/talgar</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/talgar"/>
@@ -1198,7 +1214,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/talgar</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/talgar"/>
@@ -1207,7 +1223,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/talgar</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/talgar"/>
@@ -1216,7 +1232,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/kosshy</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/kosshy"/>
@@ -1225,7 +1241,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/kosshy</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/kosshy"/>
@@ -1234,7 +1250,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/kosshy</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/kosshy"/>
@@ -1243,7 +1259,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/kosshy</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/kosshy"/>
@@ -1252,7 +1268,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/ridder</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/ridder"/>
@@ -1261,7 +1277,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/ridder</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/ridder"/>
@@ -1270,7 +1286,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/ridder</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/ridder"/>
@@ -1279,7 +1295,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/ridder</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/ridder"/>
@@ -1288,7 +1304,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/stepnogorsk</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/stepnogorsk"/>
@@ -1297,7 +1313,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/stepnogorsk</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/stepnogorsk"/>
@@ -1306,7 +1322,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/stepnogorsk</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/stepnogorsk"/>
@@ -1315,7 +1331,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/stepnogorsk</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/stepnogorsk"/>
@@ -1324,7 +1340,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/saryagash</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/saryagash"/>
@@ -1333,7 +1349,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/saryagash</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/saryagash"/>
@@ -1342,7 +1358,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/saryagash</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/saryagash"/>
@@ -1351,7 +1367,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/saryagash</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/saryagash"/>
@@ -1360,7 +1376,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/zharkent</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/zharkent"/>
@@ -1369,7 +1385,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/zharkent</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/zharkent"/>
@@ -1378,7 +1394,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/zharkent</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/zharkent"/>
@@ -1387,7 +1403,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/zharkent</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/zharkent"/>
@@ -1396,7 +1412,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/shchuchinsk</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/shchuchinsk"/>
@@ -1405,7 +1421,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/shchuchinsk</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/shchuchinsk"/>
@@ -1414,7 +1430,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/shchuchinsk</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/shchuchinsk"/>
@@ -1423,7 +1439,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/shchuchinsk</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/shchuchinsk"/>
@@ -1432,7 +1448,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/esik</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/esik"/>
@@ -1441,7 +1457,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/esik</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/esik"/>
@@ -1450,7 +1466,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/esik</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/esik"/>
@@ -1459,7 +1475,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/esik</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/esik"/>
@@ -1468,7 +1484,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/aksu</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/aksu"/>
@@ -1477,7 +1493,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/aksu</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/aksu"/>
@@ -1486,7 +1502,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/aksu</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/aksu"/>
@@ -1495,7 +1511,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/aksu</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/aksu"/>
@@ -1504,7 +1520,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/shakhtinsk</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/shakhtinsk"/>
@@ -1513,7 +1529,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/shakhtinsk</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/shakhtinsk"/>
@@ -1522,7 +1538,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/shakhtinsk</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/shakhtinsk"/>
@@ -1531,7 +1547,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/shakhtinsk</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/shakhtinsk"/>
@@ -1540,7 +1556,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/ayagoz</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/ayagoz"/>
@@ -1549,7 +1565,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/ayagoz</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/ayagoz"/>
@@ -1558,7 +1574,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/ayagoz</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/ayagoz"/>
@@ -1567,7 +1583,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/ayagoz</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/ayagoz"/>
@@ -1576,7 +1592,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/zhetysai</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/zhetysai"/>
@@ -1585,7 +1601,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/zhetysai</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/zhetysai"/>
@@ -1594,7 +1610,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/zhetysai</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/zhetysai"/>
@@ -1603,7 +1619,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/zhetysai</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/zhetysai"/>
@@ -1612,7 +1628,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/bishkek</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/bishkek"/>
@@ -1621,7 +1637,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/bishkek</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/bishkek"/>
@@ -1630,7 +1646,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/bishkek</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/bishkek"/>
@@ -1639,7 +1655,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/bishkek</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/bishkek"/>
@@ -1648,7 +1664,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/osh</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/osh"/>
@@ -1657,7 +1673,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/osh</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/osh"/>
@@ -1666,7 +1682,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/osh</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/osh"/>
@@ -1675,7 +1691,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/osh</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/osh"/>
@@ -1684,7 +1700,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/tashkent</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/tashkent"/>
@@ -1693,7 +1709,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/tashkent</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/tashkent"/>
@@ -1702,7 +1718,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/tashkent</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/tashkent"/>
@@ -1711,7 +1727,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/tashkent</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/tashkent"/>
@@ -1720,7 +1736,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/samarkand</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/samarkand"/>
@@ -1729,7 +1745,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/samarkand</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/samarkand"/>
@@ -1738,7 +1754,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/samarkand</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/samarkand"/>
@@ -1747,7 +1763,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/samarkand</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/samarkand"/>
@@ -1756,7 +1772,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/dushanbe</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/dushanbe"/>
@@ -1765,7 +1781,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/dushanbe</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/dushanbe"/>
@@ -1774,7 +1790,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/dushanbe</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/dushanbe"/>
@@ -1783,7 +1799,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/dushanbe</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/dushanbe"/>
@@ -1792,7 +1808,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/moscow</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/moscow"/>
@@ -1801,7 +1817,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/moscow</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/moscow"/>
@@ -1810,7 +1826,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/moscow</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/moscow"/>
@@ -1819,7 +1835,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/moscow</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/moscow"/>
@@ -1828,7 +1844,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/kazan</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/kazan"/>
@@ -1837,7 +1853,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/kazan</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/kazan"/>
@@ -1846,7 +1862,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/kazan</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/kazan"/>
@@ -1855,7 +1871,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/kazan</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/kazan"/>
@@ -1864,7 +1880,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/ufa</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/ufa"/>
@@ -1873,7 +1889,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/ufa</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/ufa"/>
@@ -1882,7 +1898,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/ufa</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/ufa"/>
@@ -1891,7 +1907,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/ufa</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/ufa"/>
@@ -1900,7 +1916,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/makhachkala</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/makhachkala"/>
@@ -1909,7 +1925,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/makhachkala</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/makhachkala"/>
@@ -1918,7 +1934,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/makhachkala</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/makhachkala"/>
@@ -1927,7 +1943,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/makhachkala</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/makhachkala"/>
@@ -1936,7 +1952,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/grozny</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/grozny"/>
@@ -1945,7 +1961,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/grozny</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/grozny"/>
@@ -1954,7 +1970,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/grozny</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/grozny"/>
@@ -1963,7 +1979,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/grozny</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/grozny"/>
@@ -1972,7 +1988,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/baku</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/baku"/>
@@ -1981,7 +1997,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/baku</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/baku"/>
@@ -1990,7 +2006,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/baku</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/baku"/>
@@ -1999,7 +2015,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/baku</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/baku"/>
@@ -2008,7 +2024,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/istanbul</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/istanbul"/>
@@ -2017,7 +2033,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/istanbul</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/istanbul"/>
@@ -2026,7 +2042,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/istanbul</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/istanbul"/>
@@ -2035,7 +2051,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/istanbul</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/istanbul"/>
@@ -2044,7 +2060,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/dubai</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/dubai"/>
@@ -2053,7 +2069,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/dubai</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/dubai"/>
@@ -2062,7 +2078,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/dubai</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/dubai"/>
@@ -2071,7 +2087,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/dubai</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/dubai"/>
@@ -2080,7 +2096,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/london</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/london"/>
@@ -2089,7 +2105,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/london</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/london"/>
@@ -2098,7 +2114,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/london</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/london"/>
@@ -2107,7 +2123,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/london</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/london"/>
@@ -2116,7 +2132,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/namaz/new-york</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/new-york"/>
@@ -2125,7 +2141,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/ramadan/new-york</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/new-york"/>
@@ -2134,7 +2150,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/prayer-times/new-york</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/namaz/new-york"/>
@@ -2143,7 +2159,7 @@
   </url>
   <url>
     <loc>https://firdaus.life/en/ramadan/new-york</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://firdaus.life/ramadan/new-york"/>

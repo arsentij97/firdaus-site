@@ -115,12 +115,11 @@ window.FIRDAUS = {
         a.addEventListener('click', function () { if (window.posthog && window.posthog.capture) window.posthog.capture('appstore_click', { page: path }); });
         return;
       }
+      /* 15.11 (Арсен: без «скоро»): до выхода в App Store кнопка не показывается вовсе —
+         ни пустой ссылки, ни «скоро». В день одобрения: appStoreLive: true и выкладка. */
       a.removeAttribute('href');
-      a.setAttribute('aria-disabled', 'true');
-      a.setAttribute('role', 'link');
-      a.classList.add('soon');
-      var label = a.querySelector('[data-label]') || a;
-      label.textContent = a.getAttribute('data-soon') || label.textContent;
+      a.setAttribute('hidden', '');
+      a.style.display = 'none';
     });
     each('a[data-link="telegram"]', function (a) { a.href = C.telegramUrl; });
     each('a[data-link="email"]', function (a) { a.href = 'mailto:' + C.email; });

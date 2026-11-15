@@ -93,6 +93,30 @@ export const PICS = {
   'v3-qibla-lock-en': [[480, 1043], [954, 2073]],
   'v3-tasbih-en': [[480, 1043], [954, 2073]],
   'v3-tahajjud-en': [[480, 1043], [954, 2073]],
+  /* Сайт v4 (14.11, docs/116): настоящие экраны сборки 58 — главная, «Свои» и
+     шаги знакомства; сняты 402×874 @3× без корпуса (look-web --bare --full),
+     ужаты gen/pics-v4.py. */
+  'v4-ru-home': [[480, 1044], [960, 2087]],
+  'v4-ru-svoi': [[480, 1044], [960, 2087]],
+  'v4-ru-with': [[480, 1044], [960, 2087]],
+  'v4-ru-umma': [[480, 1044], [960, 2087]],
+  'v4-ru-focus': [[480, 1044], [960, 2087]],
+  'v4-ru-focus2': [[480, 1044], [960, 2087]],
+  'v4-en-home': [[480, 1044], [960, 2087]],
+  'v4-en-svoi': [[480, 1044], [960, 2087]],
+  'v4-en-with': [[480, 1044], [960, 2087]],
+  'v4-en-umma': [[480, 1044], [960, 2087]],
+  'v4-en-focus': [[480, 1044], [960, 2087]],
+  'v4-en-focus2': [[480, 1044], [960, 2087]],
+  /* Страница авторов, вторая редакция (15.11): настоящие экраны приложения 402×874 @3×
+     (look-web --bare --full, тёмная тема) и фото основателей из их профилей в приложении.
+     Ужать: python site/gen/pics-creators.py <папка снимков> <папка фото>. */
+  ...Object.fromEntries(['ru', 'en'].flatMap((l) => ['reel-pause', 'umma', 'home', 'studio', 'studio-reel', 'studio-langs', 'profile', 'focus', 'qibla', 'quran', 'dhikr', 'messages', 'creators', 'reels']
+    .map((n) => [`cr-${l}-${n}`, [[480, 1044], [960, 2087]]]))),
+  'cr-arsen': [[224, 224], [448, 448]],
+  'cr-jantyko': [[224, 224], [448, 448]],
+  'cr-arsen-ban': [[720, 240], [1200, 400]],
+  'cr-jantyko-ban': [[720, 240], [1200, 400]],
 };
 
 function picture(attrs) {
@@ -132,5 +156,9 @@ export function render(html) {
     .replace('<script src="/assets/v2.js"></script>', () => `<script>${asset('v2.js')}</script>`)
     .replace('<link rel="stylesheet" href="/assets/v3.css">', () => `<style>${minCss(asset('v3.css'))}</style>`)
     .replace('<script src="/assets/v3.js"></script>', () => `<script>${asset('v3.js')}</script>`)
+    .replace('<link rel="stylesheet" href="/assets/v4.css">', () => `<style>${minCss(asset('v4.css'))}</style>`)
+    .replace('<script src="/assets/v4.js"></script>', () => `<script>${asset('v4.js')}</script>`)
+    .replace('<link rel="stylesheet" href="/assets/creators.css">', () => `<style>${minCss(asset('creators.css'))}</style>`)
+    .replace('<script src="/assets/creators.js"></script>', () => `<script>${asset('creators.js')}</script>`)
     .replace(/<img((?:\s+[a-z-]+(?:="[^"]*")?)*\s+data-pic="[^"]+"(?:\s+[a-z-]+(?:="[^"]*")?)*)\s*\/?>/g, (_, a) => picture(a));
 }

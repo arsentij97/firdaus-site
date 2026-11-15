@@ -23,7 +23,7 @@ The idea comes from Quran 51:55: «وَذَكِّرْ فَإِنَّ ٱلذِّ�
 - Adhkar (morning and evening), tasbih counter, a shared dhikr count across the community.
 - Tahajjud: the app calculates the last third of the night for your city and wakes you with a quiet alarm.
 - Focus: choose distracting apps; at adhan time iPhone blocks them (Apple Screen Time) until you pray.
-- Umma: feed, stories, replies; personal chats and groups, voice messages; Instants (a live photo to loved ones after prayer). Posts are checked before publishing; report and block are available everywhere.
+- Umma: feed, stories, replies; personal chats and groups, voice messages; Moments (a live photo to loved ones after prayer). Posts are checked before publishing; report and block are available everywhere.
 - For sisters: days without prayer are marked privately and stored only on the phone.
 
 ## How prayer times are calculated (method by country)

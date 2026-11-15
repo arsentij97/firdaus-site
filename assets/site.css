@@ -399,6 +399,8 @@ input[type=range]:focus-visible::-webkit-slider-thumb{box-shadow:0 0 0 3px var(-
 .land-card .acts{flex-direction:column;width:100%}
 .land-card .acts .btn{width:100%}
 .land-card .fine{font-size:14px;color:var(--faint)}
+.land-card [hidden]{display:none!important}
+.land-card .gift{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;background:rgba(217,185,92,.10);box-shadow:inset 0 0 0 1px rgba(217,185,92,.5);font:600 15px/1.3 var(--sans);color:var(--gold)}
 .land-card .brand{margin-top:12px;font-size:13px;color:var(--muted);text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
 
 /* ── появление ─────────────────────────────────────── */
