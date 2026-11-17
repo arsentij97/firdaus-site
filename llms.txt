@@ -26,7 +26,7 @@ Tagline: "Firdaus — Remind your loved ones." Core idea from Quran 51:55: "And 
 - Firdaus Premium: everything in Plus plus a golden crescent next to your name and priority support. Kazakhstan: 5,390 KZT/month or 32,990 KZT/year. US: $13.99/month or $84.99/year.
 - "If you can't pay": each month the team gives three months of Plus to 50 people who write a letter in the app.
 - Privacy: prayer-check photos, location and the cycle calendar never leave the phone. No ads, data is not sold.
-- Contact: support@firdaus.life, Telegram @firdaus_support. Partners: partners@firdaus.life.
+- Contact: support@firdaus.life; in-app: Settings → Support. Partners: partners@firdaus.life.
 
 <!-- gen:start -->
 ## Prayer times by city (время намаза по городам)

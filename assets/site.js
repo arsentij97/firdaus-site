@@ -13,7 +13,7 @@ window.FIRDAUS = {
      В день выхода поставить true. */
   appStoreLive: false,
   /* Telegram поддержки. */
-  telegramUrl: 'https://t.me/firdaus_support',
+  telegramUrl: 'https://t.me/firdaus_support', // 17.11: канала нет — карточки и ссылки сняты со всех страниц; завели канал → вернуть карточки
   telegramName: '@firdaus_support',
   /* Почта поддержки и партнёров — переадресация Porkbun на почту команды. */
   email: 'support@firdaus.life',
